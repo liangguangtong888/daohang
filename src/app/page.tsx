@@ -7,38 +7,38 @@ export default function Home() {
     <div className="min-h-screen">
       <Navbar />
       <main>
-        {/* 英雄区域 */}
+        {/* Hero Section */}
         <div className="bg-white dark:bg-apple-800 overflow-hidden relative">
           <div className="max-w-7xl mx-auto pt-20 pb-24 px-4 sm:pt-32 sm:pb-32 sm:px-6 lg:px-8 relative z-10">
             <div className="text-center">
               <h1 className="text-4xl font-bold text-apple-800 dark:text-white tracking-tight sm:text-5xl md:text-6xl">
-                发现最佳<span className="text-apple-blue">AI工具</span>
+                Discover the Best <span className="text-apple-blue">AI Tools</span>
               </h1>
               <p className="mt-6 max-w-2xl mx-auto text-xl text-apple-500 dark:text-apple-200 leading-relaxed">
-                探索我们精心策划的最强大、最创新的AI工具集合，满足您的各种需求。
+                Explore our curated collection of the most powerful and innovative AI tools for your needs.
               </p>
               <div className="mt-10">
                 <a
                   href="#tools"
                   className="apple-button text-base font-medium py-3 px-8"
                 >
-                  立即浏览
+                  Browse Now
                 </a>
               </div>
             </div>
           </div>
-          {/* 装饰性背景渐变 */}
+          {/* Decorative background gradients */}
           <div className="absolute inset-y-0 right-0 w-1/2 bg-gradient-to-r from-transparent to-apple-blue/10 dark:to-apple-blue/20" aria-hidden="true"></div>
           <div className="absolute inset-y-0 left-0 w-1/2 bg-gradient-to-l from-transparent to-apple-pink/10 dark:to-apple-pink/20" aria-hidden="true"></div>
         </div>
 
-        {/* 搜索区域 */}
+        {/* Search Area */}
         <div className="bg-apple-50 dark:bg-apple-900 py-10">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="relative">
               <input
                 type="text"
-                placeholder="搜索AI工具..."
+                placeholder="Search AI tools..."
                 className="apple-input w-full py-4 pl-12 pr-4 text-lg shadow-apple"
               />
               <svg 
@@ -54,7 +54,7 @@ export default function Home() {
           </div>
         </div>
 
-        {/* 工具类别 */}
+        {/* Tool Categories */}
         <div id="tools" className="bg-apple-50 dark:bg-apple-900">
           {categories.map((category) => {
             const categoryTools = tools.filter((tool) => tool.category === category.id);
@@ -69,12 +69,12 @@ export default function Home() {
         </div>
       </main>
 
-      {/* 页脚 */}
+      {/* Footer */}
       <footer className="bg-white dark:bg-apple-800 border-t border-apple-100 dark:border-apple-700">
         <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <p className="text-base text-apple-500 dark:text-apple-300">
-              © {new Date().getFullYear()} AI Tools Directory. 保留所有权利。
+              © {new Date().getFullYear()} AI Tools Directory. All rights reserved.
             </p>
           </div>
         </div>

@@ -152,7 +152,7 @@ export const tools: Tool[] = [
   {
     id: 'stable-diffusion',
     name: 'Stable Diffusion',
-    description: '开源的AI图像生成模型，可以本地部署或通过云服务使用',
+    description: 'Open source AI image generation model that can be deployed locally or via cloud services',
     url: 'https://stability.ai',
     category: 'ai-painting',
     tags: ['image-generation', 'open-source', 'local-deployment'],
@@ -161,7 +161,7 @@ export const tools: Tool[] = [
   {
     id: 'leonardo-ai',
     name: 'Leonardo.AI',
-    description: '专业的AI创意工具，为创作者和企业生成高质量的视觉内容',
+    description: 'Professional AI creative tool for generating high-quality visual content for creators and businesses',
     url: 'https://leonardo.ai',
     category: 'ai-painting',
     tags: ['image-generation', 'creative', 'commercial']
@@ -169,7 +169,7 @@ export const tools: Tool[] = [
   {
     id: 'adobe-firefly',
     name: 'Adobe Firefly',
-    description: 'Adobe开发的生成式AI创意工具，无缝集成到Creative Cloud应用中',
+    description: 'Generative AI creative tool by Adobe that seamlessly integrates with Creative Cloud applications',
     url: 'https://firefly.adobe.com',
     category: 'ai-painting',
     tags: ['image-editing', 'creative', 'professional']
@@ -177,7 +177,7 @@ export const tools: Tool[] = [
   {
     id: 'claude',
     name: 'Claude',
-    description: 'Anthropic开发的AI助手，擅长自然对话和长文本处理',
+    description: 'AI assistant developed by Anthropic, excelling in natural conversations and processing long texts',
     url: 'https://claude.ai',
     category: 'ai-chat',
     tags: ['chat', 'reasoning', 'document-analysis'],
@@ -186,7 +186,7 @@ export const tools: Tool[] = [
   {
     id: 'bard',
     name: 'Google Gemini',
-    description: 'Google的AI助手，结合了搜索能力和多模态理解',
+    description: 'Google\'s AI assistant that combines search capabilities with multimodal understanding',
     url: 'https://gemini.google.com',
     category: 'ai-chat',
     tags: ['chat', 'multimodal', 'search']
@@ -194,7 +194,7 @@ export const tools: Tool[] = [
   {
     id: 'pi',
     name: 'Pi',
-    description: 'Inflection AI开发的个人AI助手，注重个性化和情感化交流',
+    description: 'Personal AI assistant by Inflection AI, focused on personalized and emotionally intelligent interactions',
     url: 'https://pi.ai',
     category: 'ai-chat',
     tags: ['personal-assistant', 'emotional-intelligence', 'conversation']
@@ -202,7 +202,7 @@ export const tools: Tool[] = [
   {
     id: 'cursor',
     name: 'Cursor',
-    description: '基于AI的代码编辑器，提供智能代码建议和自动完成功能',
+    description: 'AI-based code editor that provides intelligent code suggestions and auto-completion features',
     url: 'https://cursor.sh',
     category: 'ai-programming',
     tags: ['code-editor', 'autocomplete', 'development'],
@@ -211,7 +211,7 @@ export const tools: Tool[] = [
   {
     id: 'codeium',
     name: 'Codeium',
-    description: '免费的AI编码助手，支持多种IDE和编程语言',
+    description: 'Free AI coding assistant that supports multiple IDEs and programming languages',
     url: 'https://codeium.com',
     category: 'ai-programming',
     tags: ['coding', 'autocomplete', 'free']
@@ -219,7 +219,7 @@ export const tools: Tool[] = [
   {
     id: 'tabnine',
     name: 'Tabnine',
-    description: 'AI代码助手，提供智能代码补全和建议，支持私有代码库学习',
+    description: 'AI code assistant that provides intelligent code completion and suggestions, supporting private codebase learning',
     url: 'https://www.tabnine.com',
     category: 'ai-programming',
     tags: ['code-completion', 'privacy', 'development']
@@ -227,7 +227,7 @@ export const tools: Tool[] = [
   {
     id: 'microsoft-copilot',
     name: 'Microsoft Copilot',
-    description: '微软推出的AI助手，集成在Office应用中提升工作效率',
+    description: 'Microsoft\'s AI assistant integrated into Office applications to improve productivity',
     url: 'https://copilot.microsoft.com',
     category: 'ai-office',
     tags: ['office', 'productivity', 'microsoft'],
@@ -236,7 +236,7 @@ export const tools: Tool[] = [
   {
     id: 'tome',
     name: 'Tome',
-    description: 'AI驱动的演示文稿创建工具，可生成精美的幻灯片和叙事内容',
+    description: 'AI-driven presentation creation tool that generates beautiful slides and narrative content',
     url: 'https://tome.app',
     category: 'ai-office',
     tags: ['presentations', 'storytelling', 'design']
@@ -244,7 +244,7 @@ export const tools: Tool[] = [
   {
     id: 'beautiful-ai',
     name: 'Beautiful.ai',
-    description: '智能演示工具，使用AI帮助创建专业级设计的幻灯片',
+    description: 'Intelligent presentation tool that uses AI to help create professionally designed slides',
     url: 'https://www.beautiful.ai',
     category: 'ai-office',
     tags: ['presentations', 'design', 'templates']
@@ -252,7 +252,7 @@ export const tools: Tool[] = [
   {
     id: 'mubert',
     name: 'Mubert',
-    description: 'AI音乐生成平台，为创作者和企业提供免版税音乐资源',
+    description: 'AI music generation platform providing royalty-free music resources for creators and businesses',
     url: 'https://mubert.com',
     category: 'ai-audio',
     tags: ['music-generation', 'royalty-free', 'soundtrack'],
@@ -261,7 +261,7 @@ export const tools: Tool[] = [
   {
     id: 'descript',
     name: 'Descript',
-    description: '一体化音频和视频编辑平台，提供转录、编辑和AI声音克隆功能',
+    description: 'All-in-one audio and video editing platform offering transcription, editing, and AI voice cloning',
     url: 'https://www.descript.com',
     category: 'ai-audio',
     tags: ['audio-editing', 'transcription', 'voice-cloning']
@@ -269,7 +269,7 @@ export const tools: Tool[] = [
   {
     id: 'resemble-ai',
     name: 'Resemble AI',
-    description: '高级AI语音生成和克隆工具，适用于商业和创意应用',
+    description: 'Advanced AI voice generation and cloning tool for commercial and creative applications',
     url: 'https://www.resemble.ai',
     category: 'ai-audio',
     tags: ['voice-cloning', 'text-to-speech', 'localization']
@@ -277,7 +277,7 @@ export const tools: Tool[] = [
   {
     id: 'pika',
     name: 'Pika Labs',
-    description: '从文本提示和图像生成高质量视频内容的AI工具',
+    description: 'AI tool for generating high-quality video content from text prompts and images',
     url: 'https://pika.art',
     category: 'ai-video',
     tags: ['video-generation', 'text-to-video', 'editing'],
@@ -286,7 +286,7 @@ export const tools: Tool[] = [
   {
     id: 'runway-gen2',
     name: 'Runway Gen-2',
-    description: '先进的文本到视频生成模型，创建高质量的视觉效果和动画',
+    description: 'Advanced text-to-video generation model for creating high-quality visual effects and animations',
     url: 'https://research.runwayml.com/gen2',
     category: 'ai-video',
     tags: ['text-to-video', 'visual-effects', 'animation']
@@ -294,7 +294,7 @@ export const tools: Tool[] = [
   {
     id: 'elai',
     name: 'Elai.io',
-    description: '从文本创建AI视频讲解员，无需摄像设备或绿幕',
+    description: 'Create AI video presenters from text without cameras or green screens',
     url: 'https://elai.io',
     category: 'ai-video',
     tags: ['ai-presenter', 'explainer-videos', 'text-to-video']
@@ -302,7 +302,7 @@ export const tools: Tool[] = [
   {
     id: 'figma-ai',
     name: 'Figma AI',
-    description: 'Figma集成的AI设计功能，帮助设计师更快地创建和迭代设计',
+    description: 'AI design features integrated into Figma to help designers create and iterate faster',
     url: 'https://www.figma.com/ai',
     category: 'ai-design',
     tags: ['ui-design', 'prototyping', 'collaboration'],
@@ -311,7 +311,7 @@ export const tools: Tool[] = [
   {
     id: 'uizard',
     name: 'Uizard',
-    description: 'AI驱动的设计平台，可快速将草图转换为工作原型',
+    description: 'AI-driven design platform that quickly transforms sketches into working prototypes',
     url: 'https://uizard.io',
     category: 'ai-design',
     tags: ['wireframing', 'prototyping', 'sketch-to-design']
@@ -319,7 +319,7 @@ export const tools: Tool[] = [
   {
     id: 'designs-ai',
     name: 'Designs.ai',
-    description: '一站式AI创意平台，提供logo设计、视频制作和图形设计工具',
+    description: 'All-in-one AI creative platform offering logo design, video creation, and graphic design tools',
     url: 'https://designs.ai',
     category: 'ai-design',
     tags: ['logo-design', 'branding', 'graphic-design']
@@ -327,7 +327,7 @@ export const tools: Tool[] = [
   {
     id: 'promptbase',
     name: 'PromptBase',
-    description: 'AI提示词市场，买卖优质的提示词用于各种AI模型',
+    description: 'AI prompt marketplace for buying and selling quality prompts for various AI models',
     url: 'https://promptbase.com',
     category: 'ai-prompts',
     tags: ['prompt-marketplace', 'optimization', 'templates'],
@@ -336,7 +336,7 @@ export const tools: Tool[] = [
   {
     id: 'prompthero',
     name: 'PromptHero',
-    description: '发现、创建和分享AI艺术提示词的社区平台',
+    description: 'Community platform to discover, create and share AI art prompts',
     url: 'https://prompthero.com',
     category: 'ai-prompts',
     tags: ['prompt-community', 'ai-art', 'inspiration']
@@ -344,7 +344,7 @@ export const tools: Tool[] = [
   {
     id: 'promptperfect',
     name: 'PromptPerfect',
-    description: 'AI提示词优化工具，帮助提高与大型语言模型的交互质量',
+    description: 'AI prompt optimization tool to improve interactions with large language models',
     url: 'https://promptperfect.jina.ai',
     category: 'ai-prompts',
     tags: ['prompt-optimization', 'llm', 'fine-tuning']
@@ -352,7 +352,7 @@ export const tools: Tool[] = [
   {
     id: 'heygen',
     name: 'HeyGen',
-    description: '创建逼真的AI视频讲解员和数字分身，支持多语言',
+    description: 'Create realistic AI video presenters and digital avatars with multilingual support',
     url: 'https://www.heygen.com',
     category: 'ai-digital-human',
     tags: ['digital-avatar', 'video-generation', 'multilingual'],
@@ -361,7 +361,7 @@ export const tools: Tool[] = [
   {
     id: 'dscript',
     name: 'D-ID',
-    description: '创建会说话的人像和数字人物的生成式AI平台',
+    description: 'Generative AI platform for creating talking portraits and digital characters',
     url: 'https://www.d-id.com',
     category: 'ai-digital-human',
     tags: ['talking-avatars', 'digital-people', 'creative-reality']
@@ -369,7 +369,7 @@ export const tools: Tool[] = [
   {
     id: 'hour-one',
     name: 'Hour One',
-    description: '商业级AI人物生成平台，用于培训、营销和客户服务',
+    description: 'Business-grade AI character generation platform for training, marketing, and customer service',
     url: 'https://hourone.ai',
     category: 'ai-digital-human',
     tags: ['business-avatars', 'training', 'customer-service']

@@ -21,19 +21,19 @@ export default function Navbar() {
                 href="/" 
                 className="inline-flex items-center px-1 pt-1 border-b-2 border-transparent hover:border-apple-blue text-apple-500 dark:text-apple-200 hover:text-apple-800 dark:hover:text-white transition-colors duration-200"
               >
-                首页
+                Home
               </Link>
               <Link 
                 href="/categories" 
                 className="inline-flex items-center px-1 pt-1 border-b-2 border-transparent hover:border-apple-blue text-apple-500 dark:text-apple-200 hover:text-apple-800 dark:hover:text-white transition-colors duration-200"
               >
-                分类
+                Categories
               </Link>
               <Link 
                 href="/new" 
                 className="inline-flex items-center px-1 pt-1 border-b-2 border-transparent hover:border-apple-blue text-apple-500 dark:text-apple-200 hover:text-apple-800 dark:hover:text-white transition-colors duration-200"
               >
-                新工具
+                New Tools
               </Link>
             </div>
           </div>
@@ -41,7 +41,7 @@ export default function Navbar() {
             <div className="relative">
               <input
                 type="text"
-                placeholder="搜索工具..."
+                placeholder="Search tools..."
                 className="apple-input w-64"
               />
             </div>
@@ -51,7 +51,7 @@ export default function Navbar() {
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="inline-flex items-center justify-center p-2 rounded-md text-apple-500 hover:text-apple-800 dark:text-apple-300 dark:hover:text-white focus:outline-none"
             >
-              <span className="sr-only">打开菜单</span>
+              <span className="sr-only">Open menu</span>
               {!isMenuOpen ? (
                 <svg className="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
@@ -66,7 +66,7 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* 移动端菜单 */}
+      {/* Mobile menu */}
       {isMenuOpen && (
         <div className="sm:hidden bg-white/95 dark:bg-apple-800/95 backdrop-blur-md">
           <div className="pt-2 pb-3 space-y-1">
@@ -74,26 +74,26 @@ export default function Navbar() {
               href="/" 
               className="block pl-3 pr-4 py-2 border-l-4 border-transparent hover:border-apple-blue text-apple-500 dark:text-apple-200 hover:text-apple-800 dark:hover:text-white hover:bg-apple-50 dark:hover:bg-apple-700 transition-colors duration-200"
             >
-              首页
+              Home
             </Link>
             <Link 
               href="/categories" 
               className="block pl-3 pr-4 py-2 border-l-4 border-transparent hover:border-apple-blue text-apple-500 dark:text-apple-200 hover:text-apple-800 dark:hover:text-white hover:bg-apple-50 dark:hover:bg-apple-700 transition-colors duration-200"
             >
-              分类
+              Categories
             </Link>
             <Link 
               href="/new" 
               className="block pl-3 pr-4 py-2 border-l-4 border-transparent hover:border-apple-blue text-apple-500 dark:text-apple-200 hover:text-apple-800 dark:hover:text-white hover:bg-apple-50 dark:hover:bg-apple-700 transition-colors duration-200"
             >
-              新工具
+              New Tools
             </Link>
           </div>
           <div className="pt-4 pb-3 border-t border-apple-200 dark:border-apple-700">
             <div className="px-4">
               <input
                 type="text"
-                placeholder="搜索工具..."
+                placeholder="Search tools..."
                 className="apple-input w-full"
               />
             </div>

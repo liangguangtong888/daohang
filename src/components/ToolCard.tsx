@@ -22,7 +22,7 @@ export default function ToolCard({ tool }: ToolCardProps) {
           </h3>
           {tool.isNew && (
             <span className="px-3 py-1 text-xs font-semibold text-white bg-apple-green rounded-full">
-              新上线
+              New
             </span>
           )}
         </div>
@@ -44,7 +44,7 @@ export default function ToolCard({ tool }: ToolCardProps) {
             rel="noopener noreferrer"
             className="apple-button block w-full text-center"
           >
-            访问网站
+            Visit Website
           </Link>
         </div>
       </div>
