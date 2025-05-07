@@ -1,21 +1,18 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
-
 export const metadata: Metadata = {
-  title: "AI Tools Directory - Discover the Best AI Tools",
-  description: "Explore our curated collection of the most powerful and innovative AI tools for your needs. Find the perfect AI solution for your projects.",
-  keywords: "AI tools, artificial intelligence, machine learning, AI directory, AI resources",
+  title: "AI Tools Directory - 发现最佳AI工具",
+  description: "探索我们精心策划的最强大、最创新的AI工具集合，满足您的各种需求。找到适合您项目的完美AI解决方案。",
+  keywords: "AI工具, 人工智能, 机器学习, AI导航, AI资源",
   authors: [{ name: "AI Tools Directory" }],
   viewport: "width=device-width, initial-scale=1",
   robots: "index, follow",
   openGraph: {
-    title: "AI Tools Directory - Discover the Best AI Tools",
-    description: "Explore our curated collection of the most powerful and innovative AI tools for your needs.",
+    title: "AI Tools Directory - 发现最佳AI工具",
+    description: "探索我们精心策划的最强大、最创新的AI工具集合，满足您的各种需求。",
     type: "website",
-    locale: "en_US",
+    locale: "zh_CN",
   },
 };
 
@@ -25,8 +22,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={`${inter.className} antialiased`}>{children}</body>
+    <html lang="zh">
+      <head>
+        <link 
+          rel="icon" 
+          href="/favicon.ico" 
+          sizes="any" 
+        />
+      </head>
+      <body className="antialiased bg-apple-50 dark:bg-apple-800 min-h-screen">
+        {children}
+      </body>
     </html>
   );
 }

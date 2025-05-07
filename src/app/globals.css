@@ -3,19 +3,61 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f5f5f7;
+  --foreground: #1d1d1f;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #1d1d1f;
+    --foreground: #f5f5f7;
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "SF Pro Display", "SF Pro Text", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@layer components {
+  .apple-button {
+    @apply bg-apple-blue text-white font-medium py-2 px-5 rounded-full hover:opacity-90 transition-opacity duration-200 text-center;
+  }
+  
+  .apple-card {
+    @apply bg-white dark:bg-apple-800 rounded-apple shadow-apple hover:shadow-apple-hover transition-shadow duration-300;
+  }
+  
+  .apple-input {
+    @apply bg-apple-50 dark:bg-apple-700 rounded-apple-sm px-4 py-3 border-0 focus:ring-2 focus:ring-apple-blue focus:outline-none;
+  }
+  
+  .apple-tag {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-xs font-medium;
+  }
+}
+
+/* 添加SF Pro和SF Mono字体 */
+@font-face {
+  font-family: 'SF Pro Display';
+  src: local('SF Pro Display'), local('SFProDisplay-Regular');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: local('SF Pro Display Bold'), local('SFProDisplay-Bold');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF Pro Text';
+  src: local('SF Pro Text'), local('SFProText-Regular');
+  font-weight: normal;
+  font-style: normal;
 }
