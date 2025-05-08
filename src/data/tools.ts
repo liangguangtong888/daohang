@@ -373,5 +373,86 @@ export const tools: Tool[] = [
     url: 'https://hourone.ai',
     category: 'ai-digital-human',
     tags: ['business-avatars', 'training', 'customer-service']
+  },
+  {
+    id: 'perplexity-ai',
+    name: 'Perplexity AI',
+    description: 'Intelligent search engine that provides detailed answers with citations, combining AI with web search capabilities',
+    url: 'https://www.perplexity.ai',
+    category: 'ai-chat',
+    tags: ['search', 'research', 'citations'],
+    isNew: true
+  },
+  {
+    id: 'anthropic-claude-3',
+    name: 'Claude 3',
+    description: 'Anthropic\'s latest AI assistant offering multiple model versions (Opus, Sonnet, Haiku) with visual understanding and complex reasoning capabilities',
+    url: 'https://claude.ai',
+    category: 'ai-chat',
+    tags: ['multimodal', 'reasoning', 'vision'],
+    isNew: true
+  },
+  {
+    id: 'sora',
+    name: 'Sora',
+    description: 'Text-to-video generation model by OpenAI capable of creating high-quality, realistic videos up to one minute long',
+    url: 'https://openai.com/sora',
+    category: 'ai-video',
+    tags: ['text-to-video', 'realistic', 'cinematic'],
+    isNew: true
+  },
+  {
+    id: 'stability-ai-stable-video',
+    name: 'Stable Video',
+    description: 'Video generation model by Stability AI that transforms static images into short videos',
+    url: 'https://stability.ai/stable-video',
+    category: 'ai-video',
+    tags: ['image-to-video', 'animation', 'motion'],
+    isNew: true
+  },
+  {
+    id: 'gpt-4o',
+    name: 'GPT-4o',
+    description: 'OpenAI\'s latest multimodal model featuring faster response times, enhanced visual understanding, and voice interaction capabilities',
+    url: 'https://openai.com/gpt-4o',
+    category: 'ai-chat',
+    tags: ['multimodal', 'voice', 'vision'],
+    isNew: true
+  },
+  {
+    id: 'llama-3',
+    name: 'Llama 3',
+    description: 'Meta\'s latest open-source large language model available in various sizes for different application scenarios',
+    url: 'https://ai.meta.com/llama',
+    category: 'ai-chat',
+    tags: ['open-source', 'llm', 'local-deployment'],
+    isNew: true
+  },
+  {
+    id: 'midjourney-v6',
+    name: 'Midjourney V6',
+    description: 'Latest version of Midjourney offering higher quality and more precise image generation results',
+    url: 'https://www.midjourney.com',
+    category: 'ai-painting',
+    tags: ['image-generation', 'photorealistic', 'art'],
+    isNew: true
+  },
+  {
+    id: 'adobe-express',
+    name: 'Adobe Express',
+    description: 'Content creation platform integrating Adobe Firefly AI technology, offering easy-to-use design and editing tools',
+    url: 'https://express.adobe.com',
+    category: 'ai-design',
+    tags: ['design', 'content-creation', 'templates'],
+    isNew: true
+  },
+  {
+    id: 'replicate',
+    name: 'Replicate',
+    description: 'Open platform allowing users to run various open-source AI models including image generation, video processing, and language models',
+    url: 'https://replicate.com',
+    category: 'ai-painting',
+    tags: ['open-source', 'model-hosting', 'api'],
+    isNew: true
   }
 ]; 
