@@ -89,7 +89,7 @@ export const tools: Tool[] = [
     id: 'dall-e',
     name: 'DALL-E',
     description: 'AI system that creates realistic images and art from natural language descriptions',
-    url: 'https://openai.com/dall-e',
+    url: 'https://openai.com/product/dall-e',
     category: 'ai-painting',
     tags: ['image-generation', 'art', 'design']
   },
@@ -3284,7 +3284,7 @@ export const tools: Tool[] = [
     id: 'openai-dalle3',
     name: 'DALL-E 3',
     description: 'OpenAI\'s advanced image generation model with improved prompt understanding and detail',
-    url: 'https://openai.com/dall-e-3',
+    url: 'https://openai.com/product/dall-e',
     category: 'ai-painting',
     tags: ['image-generation', 'high-detail', 'prompt-accuracy'],
     isNew: true
