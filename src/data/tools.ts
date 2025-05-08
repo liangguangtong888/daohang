@@ -2865,5 +2865,842 @@ export const tools: Tool[] = [
     url: 'https://www.khroma.co',
     category: 'ai-design',
     tags: ['color', 'palettes', 'personalization'],
+  },
+  {
+    id: 'humata',
+    name: 'Humata',
+    description: 'AI research assistant that can read and analyze PDFs, scientific papers, and documents',
+    url: 'https://www.humata.ai',
+    category: 'ai-office',
+    tags: ['research', 'document-analysis', 'knowledge-extraction'],
+    isNew: true
+  },
+  {
+    id: 'taskade',
+    name: 'Taskade AI',
+    description: 'AI project management and productivity platform with collaborative workspaces',
+    url: 'https://www.taskade.com/ai',
+    category: 'ai-office',
+    tags: ['productivity', 'project-management', 'collaboration'],
+    isNew: true
+  },
+  {
+    id: 'hyperwrite',
+    name: 'HyperWrite',
+    description: 'AI writing assistant with a full-sentence predictive engine for academic and professional writing',
+    url: 'https://www.hyperwrite.ai',
+    category: 'ai-writing',
+    tags: ['predictive-writing', 'academic', 'professional'],
+    isNew: true
+  },
+  {
+    id: 'mem',
+    name: 'Mem',
+    description: 'AI-powered workspace that automatically organizes notes and knowledge for teams',
+    url: 'https://mem.ai',
+    category: 'ai-office',
+    tags: ['note-taking', 'knowledge-management', 'team-collaboration'],
+    isNew: true
+  },
+  {
+    id: 'typeface',
+    name: 'Typeface',
+    description: 'Enterprise AI platform for creating on-brand content, images, and marketing materials',
+    url: 'https://www.typeface.ai',
+    category: 'ai-design',
+    tags: ['enterprise', 'brand-management', 'content-creation'],
+    isNew: true
+  },
+  {
+    id: 'anyword',
+    name: 'Anyword',
+    description: 'AI copywriting platform with predictive performance scoring for marketing content',
+    url: 'https://anyword.com',
+    category: 'ai-writing',
+    tags: ['copywriting', 'marketing', 'performance-scoring'],
+    isNew: true
+  },
+  {
+    id: 'gpt4all',
+    name: 'GPT4All',
+    description: 'Open-source ecosystem of locally-running large language models requiring no internet connection',
+    url: 'https://gpt4all.io',
+    category: 'ai-chat',
+    tags: ['open-source', 'local', 'privacy'],
+    isNew: true
+  },
+  {
+    id: 'ollama',
+    name: 'Ollama',
+    description: 'Run large language models locally on your computer with a simple API',
+    url: 'https://ollama.ai',
+    category: 'ai-chat',
+    tags: ['local-deployment', 'llm', 'self-hosting'],
+    isNew: true
+  },
+  {
+    id: 'otter',
+    name: 'Otter.ai',
+    description: 'AI meeting assistant that records, transcribes, and summarizes conversations',
+    url: 'https://otter.ai',
+    category: 'ai-office',
+    tags: ['transcription', 'meeting-assistant', 'summarization'],
+    isNew: true
+  },
+  {
+    id: 'krea',
+    name: 'Krea AI',
+    description: 'Creative search engine for AI-generated content with advanced prompt exploration',
+    url: 'https://www.krea.ai',
+    category: 'ai-painting',
+    tags: ['search', 'prompt-exploration', 'creative'],
+    isNew: true
+  },
+  {
+    id: 'flair',
+    name: 'Flair AI',
+    description: 'AI product photography and marketing content creation platform for e-commerce brands',
+    url: 'https://flair.ai',
+    category: 'ai-painting',
+    tags: ['product-photography', 'e-commerce', 'marketing'],
+    isNew: true
+  },
+  {
+    id: 'writely',
+    name: 'Writely AI',
+    description: 'AI content detection and academic integrity tool for educators and businesses',
+    url: 'https://writely.ai',
+    category: 'ai-writing',
+    tags: ['content-detection', 'education', 'plagiarism'],
+    isNew: true
+  },
+  {
+    id: 'deepl',
+    name: 'DeepL Write',
+    description: 'AI writing assistant and text improvement tool with advanced language refinement',
+    url: 'https://www.deepl.com/write',
+    category: 'ai-writing',
+    tags: ['text-improvement', 'language-refinement', 'grammar'],
+    isNew: true
+  },
+  {
+    id: 'cohere',
+    name: 'Cohere',
+    description: 'Enterprise AI platform providing language models for business applications',
+    url: 'https://cohere.com',
+    category: 'ai-chat',
+    tags: ['enterprise', 'language-models', 'business'],
+    isNew: true
+  },
+  {
+    id: 'antrhopic-claude-opus',
+    name: 'Claude Opus',
+    description: 'Anthropic\'s most advanced AI model for complex reasoning, creative collaboration, and precise instruction-following',
+    url: 'https://www.anthropic.com/claude',
+    category: 'ai-chat',
+    tags: ['enterprise', 'reasoning', 'instruction-following'],
+    isNew: true
+  },
+  {
+    id: 'chatpdf',
+    name: 'ChatPDF',
+    description: 'Specialized AI that allows users to chat with and extract information from PDF documents',
+    url: 'https://www.chatpdf.com',
+    category: 'ai-office',
+    tags: ['pdf', 'document-analysis', 'chat'],
+    isNew: true
+  },
+  {
+    id: 'whisperapi',
+    name: 'WhisperAPI',
+    description: 'API service based on OpenAI\'s Whisper model for accurate speech recognition and transcription',
+    url: 'https://whisperapi.com',
+    category: 'ai-audio',
+    tags: ['transcription', 'api', 'speech-recognition'],
+    isNew: true
+  },
+  {
+    id: 'modelize',
+    name: 'Modelize',
+    description: 'No-code platform for creating and deploying custom AI models for business needs',
+    url: 'https://www.modelize.ai',
+    category: 'ai-programming',
+    tags: ['no-code', 'custom-models', 'business'],
+    isNew: true
+  },
+  {
+    id: 'gamma',
+    name: 'Gamma',
+    description: 'AI presentation tool that creates professional-quality decks and documents from simple prompts',
+    url: 'https://gamma.app',
+    category: 'ai-office',
+    tags: ['presentations', 'decks', 'documents'],
+    isNew: true
+  },
+  {
+    id: 'llama-index',
+    name: 'LlamaIndex',
+    description: 'Framework for connecting custom data sources to large language models',
+    url: 'https://www.llamaindex.ai',
+    category: 'ai-programming',
+    tags: ['data-connection', 'llm', 'framework'],
+    isNew: true
+  },
+  {
+    id: 'promptify',
+    name: 'Promptify',
+    description: 'AI prompt management and optimization platform for teams and enterprises',
+    url: 'https://promptify.ai',
+    category: 'ai-prompts',
+    tags: ['prompt-management', 'enterprise', 'collaboration'],
+    isNew: true
+  },
+  {
+    id: 'wordtune',
+    name: 'Wordtune',
+    description: 'AI writing companion that helps rephrase, rewrite, and refine written content',
+    url: 'https://www.wordtune.com',
+    category: 'ai-writing',
+    tags: ['rewriting', 'refinement', 'paraphrasing'],
+    isNew: true
+  },
+  {
+    id: 'reflect',
+    name: 'Reflect',
+    description: 'AI note-taking app that automatically organizes and connects ideas',
+    url: 'https://reflect.app',
+    category: 'ai-office',
+    tags: ['note-taking', 'organization', 'knowledge-management'],
+    isNew: true
+  },
+  {
+    id: 'civitai',
+    name: 'Civitai',
+    description: 'Community-driven platform for sharing and discovering AI art models and resources',
+    url: 'https://civitai.com',
+    category: 'ai-painting',
+    tags: ['community', 'models', 'resources'],
+    isNew: true
+  },
+  {
+    id: 'lexica',
+    name: 'Lexica',
+    description: 'Search engine and generation platform for Stable Diffusion images with advanced editing',
+    url: 'https://lexica.art',
+    category: 'ai-painting',
+    tags: ['search', 'generation', 'editing'],
+    isNew: true
+  },
+  {
+    id: 'huggingface',
+    name: 'Hugging Face',
+    description: 'Open-source platform providing access to thousands of machine learning models and datasets',
+    url: 'https://huggingface.co',
+    category: 'ai-programming',
+    tags: ['open-source', 'machine-learning', 'models'],
+    isNew: true
+  },
+  {
+    id: 'getimg',
+    name: 'GetIMG.ai',
+    description: 'AI image creation and editing platform with specialized tools for designers and marketers',
+    url: 'https://getimg.ai',
+    category: 'ai-painting',
+    tags: ['image-editing', 'generation', 'upscaling'],
+    isNew: true
+  },
+  {
+    id: 'replicate',
+    name: 'Replicate',
+    description: 'Platform for running machine learning models in the cloud with API access',
+    url: 'https://replicate.com',
+    category: 'ai-programming',
+    tags: ['cloud', 'api', 'machine-learning'],
+    isNew: true
+  },
+  {
+    id: 'pixlr',
+    name: 'Pixlr AI',
+    description: 'AI-powered photo editor with advanced generative features and creative tools',
+    url: 'https://pixlr.com',
+    category: 'ai-painting',
+    tags: ['photo-editing', 'generation', 'creative'],
+    isNew: true
+  },
+  {
+    id: 'soundraw',
+    name: 'Soundraw',
+    description: 'AI music creation platform for generating royalty-free tracks for videos and content',
+    url: 'https://soundraw.io',
+    category: 'ai-audio',
+    tags: ['music-generation', 'royalty-free', 'creation'],
+    isNew: true
+  },
+  {
+    id: 'amper',
+    name: 'Amper Music',
+    description: 'Professional AI music composition tool for media producers and content creators',
+    url: 'https://www.ampermusic.com',
+    category: 'ai-audio',
+    tags: ['music-composition', 'production', 'media'],
+    isNew: true
+  },
+  {
+    id: 'synthesia-studio',
+    name: 'Synthesia Studio',
+    description: 'Professional AI video platform for creating customized videos with virtual presenters',
+    url: 'https://www.synthesia.io/studio',
+    category: 'ai-video',
+    tags: ['professional', 'virtual-presenter', 'customization'],
+    isNew: true
+  },
+  {
+    id: 'pictory',
+    name: 'Pictory',
+    description: 'AI video creation platform that transforms text and blog content into social media videos',
+    url: 'https://pictory.ai',
+    category: 'ai-video',
+    tags: ['content-repurposing', 'social-media', 'automation'],
+    isNew: true
+  },
+  {
+    id: 'replit-ghost',
+    name: 'Replit Ghost Writer',
+    description: 'AI coding assistant integrated into Replit\'s development environment',
+    url: 'https://replit.com/ghostwriter',
+    category: 'ai-programming',
+    tags: ['coding-assistant', 'development', 'ide'],
+    isNew: true
+  },
+  {
+    id: 'suno',
+    name: 'Suno',
+    description: 'AI music creation platform that can generate complete songs with vocals from text prompts',
+    url: 'https://suno.ai',
+    category: 'ai-audio',
+    tags: ['music-generation', 'vocals', 'complete-songs'],
+    isNew: true
+  },
+  {
+    id: 'lovo',
+    name: 'LOVO AI',
+    description: 'AI voice generation platform with over 500 realistic voice options in multiple languages',
+    url: 'https://lovo.ai',
+    category: 'ai-audio',
+    tags: ['voice-generation', 'multilingual', 'text-to-speech'],
+    isNew: true
+  },
+  {
+    id: 'adcreative',
+    name: 'AdCreative.ai',
+    description: 'AI-powered ad creative generation platform for marketing campaigns',
+    url: 'https://www.adcreative.ai',
+    category: 'ai-design',
+    tags: ['advertising', 'marketing', 'creative-generation'],
+    isNew: true
+  },
+  {
+    id: 'brandmark',
+    name: 'Brandmark',
+    description: 'AI logo design tool that creates unique brand identities and visual assets',
+    url: 'https://brandmark.io',
+    category: 'ai-design',
+    tags: ['logo-design', 'branding', 'visual-identity'],
+    isNew: true
+  },
+  {
+    id: 'quillbot',
+    name: 'QuillBot',
+    description: 'AI writing tool for paraphrasing, summarizing, and improving text',
+    url: 'https://quillbot.com',
+    category: 'ai-writing',
+    tags: ['paraphrasing', 'summarizing', 'grammar'],
+    isNew: true
+  },
+  {
+    id: 'webflow-ai',
+    name: 'Webflow AI',
+    description: 'AI-powered features integrated into Webflow for easier website design and content creation',
+    url: 'https://webflow.com/ai',
+    category: 'ai-design',
+    tags: ['website-design', 'content-creation', 'no-code'],
+    isNew: true
+  },
+  {
+    id: 'framer-ai',
+    name: 'Framer AI',
+    description: 'AI website builder that creates complete websites from simple text prompts',
+    url: 'https://www.framer.com/ai',
+    category: 'ai-design',
+    tags: ['website-builder', 'text-to-website', 'no-code'],
+    isNew: true
+  },
+  {
+    id: 'arthur-ai',
+    name: 'Arthur AI',
+    description: 'Enterprise AI observability platform for monitoring and explaining AI model performance',
+    url: 'https://www.arthur.ai',
+    category: 'ai-programming',
+    tags: ['enterprise', 'monitoring', 'explainability'],
+    isNew: true
+  },
+  {
+    id: 'ezi',
+    name: 'EZI.ai',
+    description: 'AI content creation platform specializing in image, animation, and video generation',
+    url: 'https://ezi.ai',
+    category: 'ai-painting',
+    tags: ['content-creation', 'animation', 'generation'],
+    isNew: true
+  },
+  {
+    id: 'glean',
+    name: 'Glean',
+    description: 'AI-powered enterprise search platform for accessing company information across all tools',
+    url: 'https://www.glean.com',
+    category: 'ai-office',
+    tags: ['enterprise-search', 'knowledge-management', 'workplace'],
+    isNew: true
+  },
+  {
+    id: 'krisp',
+    name: 'Krisp',
+    description: 'AI-powered noise cancellation tool for meetings and calls',
+    url: 'https://krisp.ai',
+    category: 'ai-audio',
+    tags: ['noise-cancellation', 'meetings', 'voice-clarity'],
+    isNew: true
+  },
+  {
+    id: 'moonbeam',
+    name: 'Moonbeam',
+    description: 'AI search engine designed specifically for long-form YouTube content',
+    url: 'https://www.moonbeam.ai',
+    category: 'ai-office',
+    tags: ['video-search', 'youtube', 'content-discovery'],
+    isNew: true
+  },
+  {
+    id: 'openai-dalle3',
+    name: 'DALL-E 3',
+    description: 'OpenAI\'s advanced image generation model with improved prompt understanding and detail',
+    url: 'https://openai.com/dall-e-3',
+    category: 'ai-painting',
+    tags: ['image-generation', 'high-detail', 'prompt-accuracy'],
+    isNew: true
+  },
+  {
+    id: 'grammarly-go',
+    name: 'Grammarly GO',
+    description: 'Generative AI writing assistant that can compose, rewrite, and reply with personalized tone',
+    url: 'https://www.grammarly.com/go',
+    category: 'ai-writing',
+    tags: ['composition', 'rewriting', 'tone-adjustment'],
+    isNew: true
+  },
+  {
+    id: 'together-ai',
+    name: 'Together AI',
+    description: 'Platform for running and fine-tuning open source LLMs with efficient infrastructure',
+    url: 'https://www.together.ai',
+    category: 'ai-programming',
+    tags: ['fine-tuning', 'llm', 'infrastructure'],
+    isNew: true
+  },
+  {
+    id: 'anthropic-claude-instant',
+    name: 'Claude Instant',
+    description: 'Anthropic\'s lightweight and faster AI assistant for everyday tasks and conversations',
+    url: 'https://www.anthropic.com/claude',
+    category: 'ai-chat',
+    tags: ['fast', 'efficient', 'everyday-tasks'],
+    isNew: true
+  },
+  {
+    id: 'gemini-pro',
+    name: 'Gemini Pro',
+    description: 'Google\'s multimodal language model capable of understanding text, images, and code',
+    url: 'https://deepmind.google/technologies/gemini/',
+    category: 'ai-chat',
+    tags: ['multimodal', 'reasoning', 'code-understanding'],
+    isNew: true
+  },
+  {
+    id: 'chatgpt-enterprise',
+    name: 'ChatGPT Enterprise',
+    description: 'Enterprise version of ChatGPT with enhanced security, privacy, and analytics',
+    url: 'https://openai.com/enterprise',
+    category: 'ai-chat',
+    tags: ['enterprise', 'security', 'compliance'],
+    isNew: true
+  },
+  {
+    id: 'gencraft',
+    name: 'Gencraft',
+    description: 'AI image generator creating high-quality visuals with simple text prompts',
+    url: 'https://gencraft.com',
+    category: 'ai-painting',
+    tags: ['image-generation', 'text-to-image', 'art'],
+    isNew: true
+  },
+  {
+    id: 'inflection-pi',
+    name: 'Inflection Pi',
+    description: 'Personal AI assistant built to be helpful, harmless, and honest in conversations',
+    url: 'https://inflection.ai',
+    category: 'ai-chat',
+    tags: ['personal-assistant', 'conversation', 'helpful'],
+    isNew: true
+  },
+  {
+    id: 'kaiber',
+    name: 'Kaiber',
+    description: 'AI creative engine for generating and animating visual content for storytelling',
+    url: 'https://kaiber.ai',
+    category: 'ai-video',
+    tags: ['animation', 'storytelling', 'visual-content'],
+    isNew: true
+  },
+  {
+    id: 'anthropic-claude-sonnet',
+    name: 'Claude Sonnet',
+    description: 'Mid-tier Claude model offering a balance of intelligence and speed for complex tasks',
+    url: 'https://www.anthropic.com/claude',
+    category: 'ai-chat',
+    tags: ['balanced', 'intelligent', 'efficient'],
+    isNew: true
+  },
+  {
+    id: 'veed-ai',
+    name: 'VEED.IO AI',
+    description: 'AI video editing tools including subtitles, translation, and voice generation',
+    url: 'https://www.veed.io',
+    category: 'ai-video',
+    tags: ['video-editing', 'subtitles', 'translation'],
+    isNew: true
+  },
+  {
+    id: 'paperpal',
+    name: 'Paperpal',
+    description: 'AI writing assistant specialized for academic and scientific writing',
+    url: 'https://paperpal.com',
+    category: 'ai-writing',
+    tags: ['academic', 'scientific', 'editing'],
+    isNew: true
+  },
+  {
+    id: 'texta',
+    name: 'Texta',
+    description: 'AI creative writing assistant for authors and content creators',
+    url: 'https://texta.ai',
+    category: 'ai-writing',
+    tags: ['creative-writing', 'fiction', 'storytelling'],
+    isNew: true
+  },
+  {
+    id: 'play-ht',
+    name: 'Play.ht',
+    description: 'AI voice generator converting text to natural-sounding voice in minutes',
+    url: 'https://play.ht',
+    category: 'ai-audio',
+    tags: ['voice-generation', 'text-to-speech', 'natural'],
+    isNew: true
+  },
+  {
+    id: 'superflow',
+    name: 'Superflow',
+    description: 'AI design system that generates UI components and entire design systems',
+    url: 'https://superflow.ai',
+    category: 'ai-design',
+    tags: ['ui-design', 'design-system', 'components'],
+    isNew: true
+  },
+  {
+    id: 'langchain',
+    name: 'LangChain',
+    description: 'Framework for developing applications powered by language models through composability',
+    url: 'https://www.langchain.com',
+    category: 'ai-programming',
+    tags: ['framework', 'development', 'composability'],
+    isNew: true
+  },
+  {
+    id: 'videoask',
+    name: 'VideoAsk',
+    description: 'AI-powered asynchronous video communication platform for businesses',
+    url: 'https://www.videoask.com',
+    category: 'ai-video',
+    tags: ['asynchronous', 'communication', 'business'],
+    isNew: true
+  },
+  {
+    id: 'caktus',
+    name: 'Caktus AI',
+    description: 'AI educational assistant for students to enhance learning and productivity',
+    url: 'https://www.caktus.ai',
+    category: 'ai-writing',
+    tags: ['education', 'learning', 'student-assistant'],
+    isNew: true
+  },
+  {
+    id: 'scalenut',
+    name: 'Scalenut',
+    description: 'AI content research and writing platform for SEO-optimized content',
+    url: 'https://www.scalenut.com',
+    category: 'ai-writing',
+    tags: ['seo', 'content-research', 'marketing'],
+    isNew: true
+  },
+  {
+    id: 'tldrthis',
+    name: 'TLDR This',
+    description: 'AI text summarizer that creates concise summaries of articles, papers, and documents',
+    url: 'https://tldrthis.com',
+    category: 'ai-writing',
+    tags: ['summarization', 'reading', 'productivity'],
+    isNew: true
+  },
+  {
+    id: 'fireflies',
+    name: 'Fireflies.ai',
+    description: 'AI meeting assistant that records, transcribes, and analyzes conversations',
+    url: 'https://fireflies.ai',
+    category: 'ai-office',
+    tags: ['meeting-assistant', 'transcription', 'analysis'],
+    isNew: true
+  },
+  {
+    id: 'notu',
+    name: 'Notu',
+    description: 'AI note-taking assistant that captures and organizes ideas in real-time',
+    url: 'https://notu.ai',
+    category: 'ai-office',
+    tags: ['note-taking', 'organization', 'real-time'],
+    isNew: true
+  },
+  {
+    id: 'tldv',
+    name: 'tl;dv',
+    description: 'AI meeting recorder and summarizer with seamless integration for video conferencing',
+    url: 'https://tldv.io',
+    category: 'ai-office',
+    tags: ['meeting-recording', 'summarization', 'conferencing'],
+    isNew: true
+  },
+  {
+    id: 'soundful',
+    name: 'Soundful',
+    description: 'AI music generation platform creating royalty-free tracks for creators and brands',
+    url: 'https://soundful.com',
+    category: 'ai-audio',
+    tags: ['music-generation', 'royalty-free', 'commercial'],
+    isNew: true
+  },
+  {
+    id: 'writesonic',
+    name: 'Writesonic',
+    description: 'AI writing platform for creating marketing copy, blog posts, and articles',
+    url: 'https://writesonic.com',
+    category: 'ai-writing',
+    tags: ['marketing', 'content-creation', 'copywriting'],
+    isNew: true
+  },
+  {
+    id: 'rytr',
+    name: 'Rytr',
+    description: 'AI writing assistant for creating high-quality content for various use cases',
+    url: 'https://rytr.me',
+    category: 'ai-writing',
+    tags: ['content-creation', 'versatile', 'affordable'],
+    isNew: true
+  },
+  {
+    id: 'v0',
+    name: 'v0',
+    description: 'AI design prototyping tool focused on generating realistic UI designs from descriptions',
+    url: 'https://v0.dev',
+    category: 'ai-design',
+    tags: ['ui-design', 'prototyping', 'web-development'],
+    isNew: true
+  },
+  {
+    id: 'neuroflash',
+    name: 'Neuroflash',
+    description: 'AI content creation platform specialized for marketing teams and agencies',
+    url: 'https://neuroflash.com',
+    category: 'ai-writing',
+    tags: ['marketing', 'content', 'agencies'],
+    isNew: true
+  },
+  {
+    id: 'frase',
+    name: 'Frase',
+    description: 'AI content optimization tool for SEO-focused content research and writing',
+    url: 'https://frase.io',
+    category: 'ai-writing',
+    tags: ['seo', 'content-optimization', 'research'],
+    isNew: true
+  },
+  {
+    id: 'invideo',
+    name: 'InVideo AI',
+    description: 'AI video editing platform that transforms scripts into ready-to-use videos',
+    url: 'https://invideo.io',
+    category: 'ai-video',
+    tags: ['video-creation', 'script-to-video', 'editing'],
+    isNew: true
+  },
+  {
+    id: 'aiva',
+    name: 'AIVA',
+    description: 'AI music composition platform focused on emotional scores for films and games',
+    url: 'https://www.aiva.ai',
+    category: 'ai-audio',
+    tags: ['music-composition', 'emotional', 'soundtrack'],
+    isNew: true
+  },
+  {
+    id: 'visme',
+    name: 'Visme AI',
+    description: 'AI presentation and design tool for creating professional visual content',
+    url: 'https://www.visme.co',
+    category: 'ai-design',
+    tags: ['presentations', 'infographics', 'visual-content'],
+    isNew: true
+  },
+  {
+    id: 'ai21',
+    name: 'AI21 Labs',
+    description: 'Advanced AI language models for writing, summarization, and content enhancement',
+    url: 'https://www.ai21.com',
+    category: 'ai-writing',
+    tags: ['language-models', 'summarization', 'enhancement'],
+    isNew: true
+  },
+  {
+    id: 'wix-adc',
+    name: 'Wix ADC',
+    description: 'AI Design Constructor for creating and customizing websites with simple text prompts',
+    url: 'https://www.wix.com/adc',
+    category: 'ai-design',
+    tags: ['website-creation', 'customization', 'no-code'],
+    isNew: true
+  },
+  {
+    id: 'adept',
+    name: 'Adept AI',
+    description: 'AI assistant that can perform complex actions across software applications',
+    url: 'https://www.adept.ai',
+    category: 'ai-office',
+    tags: ['software-automation', 'actions', 'assistant'],
+    isNew: true
+  },
+  {
+    id: 'forefront',
+    name: 'Forefront',
+    description: 'Platform for accessing multiple AI models through a unified interface',
+    url: 'https://www.forefront.ai',
+    category: 'ai-chat',
+    tags: ['multi-model', 'unified-interface', 'access'],
+    isNew: true
+  },
+  {
+    id: 'magai',
+    name: 'Magai',
+    description: 'AI coaching and educational platform for personal development',
+    url: 'https://www.magai.ai',
+    category: 'ai-office',
+    tags: ['coaching', 'education', 'personal-development'],
+    isNew: true
+  },
+  {
+    id: 'craiyon',
+    name: 'Craiyon',
+    description: 'Free AI image generator (formerly DALL-E mini) creating visuals from text descriptions',
+    url: 'https://www.craiyon.com',
+    category: 'ai-painting',
+    tags: ['free', 'image-generation', 'accessible'],
+    isNew: true
+  },
+  {
+    id: 'compose-ai',
+    name: 'Compose AI',
+    description: 'AI writing extension that helps users write faster with auto-completion and generation',
+    url: 'https://www.compose.ai',
+    category: 'ai-writing',
+    tags: ['auto-completion', 'extension', 'productivity'],
+    isNew: true
+  },
+  {
+    id: 'riku',
+    name: 'Riku.AI',
+    description: 'No-code platform for creating and deploying AI models without programming',
+    url: 'https://riku.ai',
+    category: 'ai-programming',
+    tags: ['no-code', 'model-creation', 'deployment'],
+    isNew: true
+  },
+  {
+    id: 'soofy',
+    name: 'Soofy',
+    description: 'AI reading assistant that summarizes books and provides key insights',
+    url: 'https://soofy.io',
+    category: 'ai-office',
+    tags: ['book-summaries', 'reading', 'insights'],
+    isNew: true
+  },
+  {
+    id: 'stockimg',
+    name: 'Stockimg AI',
+    description: 'AI stock image generator creating custom stock photos and illustrations',
+    url: 'https://stockimg.ai',
+    category: 'ai-painting',
+    tags: ['stock-images', 'commercial', 'custom'],
+    isNew: true
+  },
+  {
+    id: 'debuild',
+    name: 'Debuild',
+    description: 'AI-powered web app builder that creates functional applications from descriptions',
+    url: 'https://debuild.app',
+    category: 'ai-programming',
+    tags: ['web-app', 'app-builder', 'development'],
+    isNew: true
+  },
+  {
+    id: 'alysia',
+    name: 'Alysia',
+    description: 'AI songwriting assistant for creating lyrics, melodies, and complete songs',
+    url: 'https://www.alysia.ai',
+    category: 'ai-audio',
+    tags: ['songwriting', 'lyrics', 'music-creation'],
+    isNew: true
+  },
+  {
+    id: 'phraser',
+    name: 'Phraser',
+    description: 'AI visual brainstorming tool for creative professionals and marketers',
+    url: 'https://phraser.tech',
+    category: 'ai-design',
+    tags: ['brainstorming', 'creative', 'visual-ideation'],
+    isNew: true
+  },
+  {
+    id: 'namelix',
+    name: 'Namelix',
+    description: 'AI business name generator creating unique brand names with logo concepts',
+    url: 'https://namelix.com',
+    category: 'ai-design',
+    tags: ['naming', 'branding', 'business'],
+    isNew: true
+  },
+  {
+    id: 'autodraw',
+    name: 'AutoDraw',
+    description: 'AI drawing tool that recognizes sketches and suggests professional drawings',
+    url: 'https://www.autodraw.com',
+    category: 'ai-design',
+    tags: ['drawing', 'recognition', 'sketching'],
+    isNew: true
   }
 ]; 
