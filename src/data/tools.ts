@@ -89,7 +89,7 @@ export const tools: Tool[] = [
     id: 'dall-e',
     name: 'DALL-E',
     description: 'AI system that creates realistic images and art from natural language descriptions',
-    url: 'https://openai.com/dall-e-2',
+    url: 'https://openai.com/dall-e',
     category: 'ai-painting',
     tags: ['image-generation', 'art', 'design']
   },
