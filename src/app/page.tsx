@@ -14,30 +14,46 @@ export default function Home() {
 
   // Get search query from URL parameters
   useEffect(() => {
-    const query = searchParams.get('q');
-    if (query) {
-      setSearchQuery(query);
-      executeSearch(query);
+    try {
+      if (searchParams) {
+        const query = searchParams.get('q');
+        if (query) {
+          setSearchQuery(query);
+          executeSearch(query);
+        }
+      }
+    } catch (error) {
+      console.error('Error processing search params:', error);
     }
   }, [searchParams]);
 
   const executeSearch = (query: string) => {
-    if (!query.trim()) {
+    if (!query || !query.trim()) {
       setSearchResults(null);
       return;
     }
 
-    const queryLower = query.toLowerCase();
-    const results = tools.filter(
-      tool => 
-        tool.name.toLowerCase().includes(queryLower) || 
-        tool.description.toLowerCase().includes(queryLower) || 
-        tool.tags?.some(tag => tag.toLowerCase().includes(queryLower))
-    );
-    
-    setSearchResults(results);
-    // Scroll to results area
-    document.getElementById('search-results')?.scrollIntoView({ behavior: 'smooth' });
+    try {
+      const queryLower = query.toLowerCase();
+      const results = tools.filter(
+        tool => 
+          (tool.name?.toLowerCase() || '').includes(queryLower) || 
+          (tool.description?.toLowerCase() || '').includes(queryLower) || 
+          tool.tags?.some(tag => (tag?.toLowerCase() || '').includes(queryLower))
+      );
+      
+      setSearchResults(results);
+      // Scroll to results area safely
+      setTimeout(() => {
+        const resultsElement = document.getElementById('search-results');
+        if (resultsElement) {
+          resultsElement.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    } catch (error) {
+      console.error('Error executing search:', error);
+      setSearchResults([]);
+    }
   };
 
   const handleSearch = (e: React.FormEvent) => {
