@@ -5,6 +5,16 @@ import { useState } from 'react';
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [searchQuery, setSearchQuery] = useState('');
+
+  const handleSearch = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (searchQuery.trim()) {
+      // 在这里可以实现搜索逻辑
+      console.log('搜索查询:', searchQuery);
+      // 如果想要实现页面跳转，可以使用window.location.href = `/search?q=${encodeURIComponent(searchQuery)}`
+    }
+  };
 
   return (
     <nav className="bg-white/90 dark:bg-apple-800/90 backdrop-blur-md sticky top-0 z-50">
@@ -38,13 +48,30 @@ export default function Navbar() {
             </div>
           </div>
           <div className="hidden sm:ml-6 sm:flex sm:items-center">
-            <div className="relative">
+            <form onSubmit={handleSearch} className="relative">
               <input
                 type="text"
                 placeholder="Search tools..."
                 className="apple-input w-64"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
               />
-            </div>
+              <button 
+                type="submit" 
+                className="absolute right-3 top-1/2 transform -translate-y-1/2"
+                aria-label="Search"
+              >
+                <svg 
+                  className="h-5 w-5 text-apple-400" 
+                  xmlns="http://www.w3.org/2000/svg" 
+                  fill="none" 
+                  viewBox="0 0 24 24" 
+                  stroke="currentColor"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+              </button>
+            </form>
           </div>
           <div className="-mr-2 flex items-center sm:hidden">
             <button
@@ -90,13 +117,30 @@ export default function Navbar() {
             </Link>
           </div>
           <div className="pt-4 pb-3 border-t border-apple-200 dark:border-apple-700">
-            <div className="px-4">
+            <form onSubmit={handleSearch} className="px-4 relative">
               <input
                 type="text"
                 placeholder="Search tools..."
                 className="apple-input w-full"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
               />
-            </div>
+              <button 
+                type="submit" 
+                className="absolute right-7 top-1/2 transform -translate-y-1/2"
+                aria-label="Search"
+              >
+                <svg 
+                  className="h-5 w-5 text-apple-400" 
+                  xmlns="http://www.w3.org/2000/svg" 
+                  fill="none" 
+                  viewBox="0 0 24 24" 
+                  stroke="currentColor"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+              </button>
+            </form>
           </div>
         </div>
       )}
