@@ -1318,5 +1318,860 @@ export const tools: Tool[] = [
     category: 'ai-writing',
     tags: ['seo', 'content-marketing', 'optimization'],
     isNew: true
+  },
+  {
+    id: 'diffblue',
+    name: 'Diffblue',
+    description: 'AI-powered automated code generation for Java unit tests',
+    url: 'https://www.diffblue.com',
+    category: 'ai-programming',
+    tags: ['java', 'unit-testing', 'code-generation'],
+    isNew: true
+  },
+  {
+    id: 'codium-ai',
+    name: 'Codium AI',
+    description: 'AI code testing assistant that automatically generates meaningful tests',
+    url: 'https://www.codium.ai',
+    category: 'ai-programming',
+    tags: ['testing', 'code-quality', 'automation'],
+    isNew: true
+  },
+  {
+    id: 'blackbox-ai',
+    name: 'Blackbox AI',
+    description: 'AI-powered coding assistant with specialized features for code understanding and generation',
+    url: 'https://www.useblackbox.io',
+    category: 'ai-programming',
+    tags: ['code-generation', 'code-search', 'learning'],
+    isNew: true
+  },
+  {
+    id: 'mintlify',
+    name: 'Mintlify',
+    description: 'AI documentation writer that generates documentation from code comments and patterns',
+    url: 'https://mintlify.com',
+    category: 'ai-programming',
+    tags: ['documentation', 'developer-experience', 'automation'],
+    isNew: true
+  },
+  {
+    id: 'swimm',
+    name: 'Swimm',
+    description: 'AI-assisted documentation platform that keeps documentation synchronized with code',
+    url: 'https://swimm.io',
+    category: 'ai-programming',
+    tags: ['documentation', 'collaboration', 'knowledge-sharing'],
+    isNew: true
+  },
+  {
+    id: 'autodev',
+    name: 'AutoDev',
+    description: 'AI pair programming tool that helps developers understand and improve code',
+    url: 'https://autodev.ai',
+    category: 'ai-programming',
+    tags: ['pair-programming', 'code-improvement', 'productivity'],
+    isNew: true
+  },
+  {
+    id: 'sketch2code',
+    name: 'Sketch2Code',
+    description: 'Microsoft AI tool that transforms hand-drawn designs into functional HTML code',
+    url: 'https://sketch2code.azurewebsites.net',
+    category: 'ai-programming',
+    tags: ['design-to-code', 'html', 'prototyping'],
+    isNew: true
+  },
+  {
+    id: 'safurai',
+    name: 'Safurai',
+    description: 'Code assistant that provides security-focused code suggestions and improvements',
+    url: 'https://safurai.com',
+    category: 'ai-programming',
+    tags: ['security', 'code-quality', 'assistant'],
+    isNew: true
+  },
+  {
+    id: 'assemblyai',
+    name: 'AssemblyAI',
+    description: 'Speech-to-text API that provides accurate transcription and analysis features',
+    url: 'https://www.assemblyai.com',
+    category: 'ai-audio',
+    tags: ['speech-to-text', 'transcription', 'api'],
+    isNew: true
+  },
+  {
+    id: 'playht-ultra',
+    name: 'Play.ht Ultra',
+    description: 'Advanced AI voice synthesis that creates ultra-realistic voice performances',
+    url: 'https://play.ht/ultra',
+    category: 'ai-audio',
+    tags: ['voice-synthesis', 'realistic', 'performance'],
+    isNew: true
+  },
+  {
+    id: 'neets-ai',
+    name: 'Neets.ai',
+    description: 'AI voice cloning platform for creating personalized voice overs in various languages',
+    url: 'https://neets.ai',
+    category: 'ai-audio',
+    tags: ['voice-cloning', 'multilingual', 'personalization'],
+    isNew: true
+  },
+  {
+    id: 'audiostack',
+    name: 'Audiostack',
+    description: 'Platform for creating custom AI voices and audio content at scale',
+    url: 'https://www.audiostack.ai',
+    category: 'ai-audio',
+    tags: ['voice-creation', 'audio-production', 'enterprise'],
+    isNew: true
+  },
+  {
+    id: 'wav2lip',
+    name: 'Wav2Lip',
+    description: 'Open-source AI model that generates lip-sync videos from audio and reference face',
+    url: 'https://github.com/Rudrabha/Wav2Lip',
+    category: 'ai-video',
+    tags: ['lip-sync', 'open-source', 'face-animation'],
+    isNew: true
+  },
+  {
+    id: 'synthesia-translators',
+    name: 'Synthesia Translators',
+    description: 'AI tool that translates videos into multiple languages with synchronized lip movements',
+    url: 'https://www.synthesia.io/features/translators',
+    category: 'ai-video',
+    tags: ['video-translation', 'localization', 'multilingual'],
+    isNew: true
+  },
+  {
+    id: 'rask-ai',
+    name: 'Rask AI',
+    description: 'AI video localization platform that translates videos while preserving voice tone',
+    url: 'https://www.rask.ai',
+    category: 'ai-video',
+    tags: ['localization', 'voice-preservation', 'translation'],
+    isNew: true
+  },
+  {
+    id: 'descript-ai-storyboard',
+    name: 'Descript AI Storyboard',
+    description: 'Creates animated storyboards from scripts using AI scene visualization',
+    url: 'https://www.descript.com/storyboard',
+    category: 'ai-video',
+    tags: ['storyboarding', 'visualization', 'preproduction'],
+    isNew: true
+  },
+  {
+    id: 'stockimg-ai',
+    name: 'Stockimg AI',
+    description: 'AI stock image generator creating unique, royalty-free images for commercial use',
+    url: 'https://stockimg.ai',
+    category: 'ai-painting',
+    tags: ['stock-images', 'commercial', 'royalty-free'],
+    isNew: true
+  },
+  {
+    id: 'lexica',
+    name: 'Lexica',
+    description: 'Search engine and generation platform for stable diffusion images',
+    url: 'https://lexica.art',
+    category: 'ai-painting',
+    tags: ['search', 'stable-diffusion', 'inspiration'],
+    isNew: true
+  },
+  {
+    id: 'designify',
+    name: 'Designify',
+    description: 'AI design tool that transforms ordinary photos into professional product visuals',
+    url: 'https://www.designify.com',
+    category: 'ai-painting',
+    tags: ['product-photography', 'enhancement', 'transformation'],
+    isNew: true
+  },
+  {
+    id: 'getimg-ai',
+    name: 'Getimg.ai',
+    description: 'Suite of AI image generation tools for creating, editing, and enhancing images',
+    url: 'https://getimg.ai',
+    category: 'ai-painting',
+    tags: ['generation', 'editing', 'enhancement'],
+    isNew: true
+  },
+  {
+    id: 'clipdrop-relight',
+    name: 'ClipDrop Relight',
+    description: 'AI tool that changes the lighting of product photos with professional lighting setups',
+    url: 'https://clipdrop.co/relight',
+    category: 'ai-painting',
+    tags: ['lighting', 'product-photography', 'editing'],
+    isNew: true
+  },
+  {
+    id: 'vizcom',
+    name: 'Vizcom',
+    description: 'AI design tool that transforms rough sketches into refined product renderings',
+    url: 'https://www.vizcom.ai',
+    category: 'ai-design',
+    tags: ['sketch-to-render', 'product-design', 'visualization'],
+    isNew: true
+  },
+  {
+    id: 'magician',
+    name: 'Magician',
+    description: 'AI design assistant for Figma that generates icons, images, and UI elements',
+    url: 'https://magician.design',
+    category: 'ai-design',
+    tags: ['figma', 'ui-design', 'generation'],
+    isNew: true
+  },
+  {
+    id: 'galileo-ai',
+    name: 'Galileo AI',
+    description: 'AI UI design tool that generates interface designs from text descriptions',
+    url: 'https://www.usegalileo.ai',
+    category: 'ai-design',
+    tags: ['ui-design', 'generation', 'interface'],
+    isNew: true
+  },
+  {
+    id: 'ai-matrix',
+    name: 'AI Matrix',
+    description: 'AI design tool for creating 3D objects and environments from text prompts',
+    url: 'https://matrix.ai',
+    category: 'ai-design',
+    tags: ['3d-generation', 'environments', 'objects'],
+    isNew: true
+  },
+  {
+    id: 'spline-ai',
+    name: 'Spline AI',
+    description: 'AI-powered 3D design tool for creating interactive 3D web experiences',
+    url: 'https://spline.design',
+    category: 'ai-design',
+    tags: ['3d-design', 'interaction', 'web-experiences'],
+    isNew: true
+  },
+  {
+    id: 'looka',
+    name: 'Looka',
+    description: 'AI-powered logo and brand identity design platform',
+    url: 'https://looka.com',
+    category: 'ai-design',
+    tags: ['logo', 'branding', 'identity'],
+    isNew: true
+  },
+  {
+    id: 'brandmark',
+    name: 'Brandmark',
+    description: 'AI logo design tool specializing in unique, vector-based logos',
+    url: 'https://brandmark.io',
+    category: 'ai-design',
+    tags: ['logo', 'vector', 'branding'],
+    isNew: true
+  },
+  {
+    id: 'midjourney-niji',
+    name: 'Midjourney Niji',
+    description: 'Specialized version of Midjourney focused on anime and illustration styles',
+    url: 'https://www.midjourney.com/niji',
+    category: 'ai-painting',
+    tags: ['anime', 'illustration', 'stylized'],
+    isNew: true
+  },
+  {
+    id: 'procreate-dreams',
+    name: 'Procreate Dreams',
+    description: 'AI-enhanced animation app for creating frame-by-frame animations with generative features',
+    url: 'https://procreate.com/dreams',
+    category: 'ai-video',
+    tags: ['animation', 'drawing', 'creative'],
+    isNew: true
+  },
+  {
+    id: 'genmo',
+    name: 'Genmo',
+    description: 'Interactive AI video generation platform with real-time editing capabilities',
+    url: 'https://www.genmo.ai',
+    category: 'ai-video',
+    tags: ['interactive', 'real-time', 'editing'],
+    isNew: true
+  },
+  {
+    id: 'prompt-engineering-institute',
+    name: 'Prompt Engineering Institute',
+    description: 'Platform providing education and certification in AI prompt engineering',
+    url: 'https://www.promptengineering.org',
+    category: 'ai-prompts',
+    tags: ['education', 'certification', 'training'],
+    isNew: true
+  },
+  {
+    id: 'promptlayer',
+    name: 'PromptLayer',
+    description: 'Platform for logging, tracking and managing prompts for LLMs',
+    url: 'https://promptlayer.com',
+    category: 'ai-prompts',
+    tags: ['management', 'tracking', 'organization'],
+    isNew: true
+  },
+  {
+    id: 'promptbase-marketplace',
+    name: 'PromptBase Marketplace',
+    description: 'Marketplace for buying and selling high-performing AI prompts',
+    url: 'https://promptbase.com/marketplace',
+    category: 'ai-prompts',
+    tags: ['marketplace', 'selling', 'premium'],
+    isNew: true
+  },
+  {
+    id: 'promptjoy',
+    name: 'PromptJoy',
+    description: 'Advanced prompt engineering tool with testing and optimization features',
+    url: 'https://www.promptjoy.com',
+    category: 'ai-prompts',
+    tags: ['optimization', 'testing', 'analytics'],
+    isNew: true
+  },
+  {
+    id: 'snackprompt',
+    name: 'SnackPrompt',
+    description: 'Community-driven prompt library with voting and categorization features',
+    url: 'https://snackprompt.com',
+    category: 'ai-prompts',
+    tags: ['community', 'library', 'voting'],
+    isNew: true
+  },
+  {
+    id: 'dub-ai',
+    name: 'Dub AI',
+    description: 'Voice dubbing platform that preserves the original voice characteristics in translations',
+    url: 'https://www.dubtechnologies.ai',
+    category: 'ai-audio',
+    tags: ['dubbing', 'translation', 'voice-preservation'],
+    isNew: true
+  },
+  {
+    id: 'krisp-meetings',
+    name: 'Krisp Meetings',
+    description: 'AI meeting assistant that records, transcribes, and summarizes meetings with noise cancellation',
+    url: 'https://krisp.ai/meetings',
+    category: 'ai-audio',
+    tags: ['meetings', 'summaries', 'transcription'],
+    isNew: true
+  },
+  {
+    id: 'audialab',
+    name: 'Audialab',
+    description: 'AI audio enhancement platform for improving voice quality in recordings',
+    url: 'https://www.audialab.ai',
+    category: 'ai-audio',
+    tags: ['audio-enhancement', 'voice-quality', 'restoration'],
+    isNew: true
+  },
+  {
+    id: 'beatoven',
+    name: 'Beatoven.ai',
+    description: 'AI music composition tool for creating royalty-free background music',
+    url: 'https://www.beatoven.ai',
+    category: 'ai-audio',
+    tags: ['music-composition', 'background-music', 'customization'],
+    isNew: true
+  },
+  {
+    id: 'aiva',
+    name: 'AIVA',
+    description: 'AI composer creating emotional soundtrack music for films and games',
+    url: 'https://www.aiva.ai',
+    category: 'ai-audio',
+    tags: ['soundtrack', 'composition', 'emotional'],
+    isNew: true
+  },
+  {
+    id: 'voicemod',
+    name: 'Voicemod AI',
+    description: 'Real-time voice changing and sound effects platform with AI-generated voices',
+    url: 'https://www.voicemod.net/ai-voices',
+    category: 'ai-audio',
+    tags: ['voice-changing', 'real-time', 'effects'],
+    isNew: true
+  },
+  {
+    id: 'excelformulabot',
+    name: 'Excel Formula Bot',
+    description: 'AI assistant that generates Excel formulas from natural language descriptions',
+    url: 'https://excelformulabot.com',
+    category: 'ai-office',
+    tags: ['excel', 'formulas', 'productivity'],
+    isNew: true
+  },
+  {
+    id: 'magical',
+    name: 'Magical',
+    description: 'AI text expander and automation tool for speeding up repetitive typing tasks',
+    url: 'https://magical.com',
+    category: 'ai-office',
+    tags: ['text-expansion', 'automation', 'messaging'],
+    isNew: true
+  },
+  {
+    id: 'beebee-ai',
+    name: 'Beebee AI',
+    description: 'AI presentation creator that builds slides from text prompts with brand guidelines',
+    url: 'https://beebee.ai',
+    category: 'ai-office',
+    tags: ['presentations', 'slides', 'branding'],
+    isNew: true
+  },
+  {
+    id: 'usechatgpt',
+    name: 'UseChat.GPT',
+    description: 'Collection of specialized ChatGPT templates for different professional use cases',
+    url: 'https://usechatgpt.ai',
+    category: 'ai-chat',
+    tags: ['templates', 'specialized', 'professional'],
+    isNew: true
+  },
+  {
+    id: 'chat-with-rtf',
+    name: 'ChatWithRTF',
+    description: 'AI-powered RTF (Rich Text Format) file analyzer and query answering tool',
+    url: 'https://chatwithrtf.ai',
+    category: 'ai-office',
+    tags: ['document-analysis', 'rtf', 'question-answering'],
+    isNew: true
+  },
+  {
+    id: 'autodoc',
+    name: 'AutoDoc',
+    description: 'AI document generation platform that creates professional documents from templates',
+    url: 'https://autodoc.ai',
+    category: 'ai-office',
+    tags: ['document-generation', 'templates', 'automation'],
+    isNew: true
+  },
+  {
+    id: 'superflows',
+    name: 'Superflows',
+    description: 'AI assistant for integrating powerful co-pilot experiences into existing products',
+    url: 'https://www.superflows.ai',
+    category: 'ai-programming',
+    tags: ['co-pilot', 'integration', 'product-enhancement'],
+    isNew: true
+  },
+  {
+    id: 'arcwise',
+    name: 'Arcwise',
+    description: 'AI-powered documentation writer for software engineers that integrates with GitHub',
+    url: 'https://www.arcwise.ai',
+    category: 'ai-programming',
+    tags: ['documentation', 'github', 'integration'],
+    isNew: true
+  },
+  {
+    id: 'neural-love',
+    name: 'Neural.Love',
+    description: 'AI art generator and image enhancer with advanced enhancement features',
+    url: 'https://neural.love',
+    category: 'ai-painting',
+    tags: ['art-generation', 'enhancement', 'upscaling'],
+    isNew: true
+  },
+  {
+    id: 'waldo-photos',
+    name: 'Waldo Photos',
+    description: 'AI-powered photo discovery platform that finds photos containing specific people',
+    url: 'https://waldophotos.com',
+    category: 'ai-painting',
+    tags: ['facial-recognition', 'photo-discovery', 'organization'],
+    isNew: true
+  },
+  {
+    id: 'jitter',
+    name: 'Jitter',
+    description: 'AI animation tool that brings designs to life with customizable motion',
+    url: 'https://jitter.video',
+    category: 'ai-video',
+    tags: ['animation', 'motion-design', 'design'],
+    isNew: true
+  },
+  {
+    id: 'leia-pix',
+    name: 'Leia Pix',
+    description: 'AI platform that converts 2D images into 3D lightfield images and animations',
+    url: 'https://www.leiapix.com',
+    category: 'ai-painting',
+    tags: ['3d-conversion', 'lightfield', 'animation'],
+    isNew: true
+  },
+  {
+    id: 'clipchamp',
+    name: 'Clipchamp',
+    description: 'Microsoft\'s AI-powered video editor with text-based editing and automatic enhancements',
+    url: 'https://clipchamp.com',
+    category: 'ai-video',
+    tags: ['video-editing', 'text-based', 'microsoft'],
+    isNew: true
+  },
+  {
+    id: 'flim',
+    name: 'Flim',
+    description: 'AI video editing app that creates professional quality videos from media and text',
+    url: 'https://flim.ai',
+    category: 'ai-video',
+    tags: ['video-editing', 'mobile', 'professional'],
+    isNew: true
+  },
+  {
+    id: 'luma-labs-dreamgaussian',
+    name: 'DreamGaussian',
+    description: 'Luma Labs\' 3D model generation technology that creates 3D assets from text or images',
+    url: 'https://lumalabs.ai/dreamgaussian',
+    category: 'ai-design',
+    tags: ['3d-model', 'generation', 'assets'],
+    isNew: true
+  },
+  {
+    id: 'shap-e',
+    name: 'Shap-E',
+    description: 'OpenAI\'s 3D object generation model for creating 3D objects from text descriptions',
+    url: 'https://github.com/openai/shap-e',
+    category: 'ai-design',
+    tags: ['3d-generation', 'text-to-3d', 'open-source'],
+    isNew: true
+  },
+  {
+    id: 'capsule',
+    name: 'Capsule',
+    description: 'AI-driven video editing platform for creating social media content at scale',
+    url: 'https://capsule.video',
+    category: 'ai-video',
+    tags: ['social-media', 'marketing', 'collaboration'],
+    isNew: true
+  },
+  {
+    id: 'kaiber-motion',
+    name: 'Kaiber Motion',
+    description: 'AI animation tool that transforms still images into dynamic motion videos',
+    url: 'https://kaiber.ai/motion',
+    category: 'ai-video',
+    tags: ['animation', 'motion', 'transformation'],
+    isNew: true
+  },
+  {
+    id: 'wonder-dynamics',
+    name: 'Wonder Dynamics',
+    description: 'AI-powered filmmaking platform that automates CGI character animation',
+    url: 'https://www.wonderdynamics.com',
+    category: 'ai-video',
+    tags: ['cgi', 'animation', 'filmmaking'],
+    isNew: true
+  },
+  {
+    id: 'pattern-ai',
+    name: 'Pattern AI',
+    description: 'AI virtual human creation platform for interactive customer experiences',
+    url: 'https://pattern.ai',
+    category: 'ai-digital-human',
+    tags: ['virtual-human', 'customer-experience', 'interactive'],
+    isNew: true
+  },
+  {
+    id: 'ready-player-me',
+    name: 'Ready Player Me',
+    description: 'Cross-game avatar platform that creates 3D avatars from a single selfie',
+    url: 'https://readyplayer.me',
+    category: 'ai-digital-human',
+    tags: ['avatars', 'gaming', 'metaverse'],
+    isNew: true
+  },
+  {
+    id: 'descript-overdub',
+    name: 'Descript Overdub',
+    description: 'Voice cloning technology for replacing words in audio recordings naturally',
+    url: 'https://www.descript.com/overdub',
+    category: 'ai-audio',
+    tags: ['voice-cloning', 'editing', 'replacement'],
+    isNew: true
+  },
+  {
+    id: 'soundful',
+    name: 'Soundful',
+    description: 'AI music generator creating royalty-free tracks for content creators',
+    url: 'https://soundful.com',
+    category: 'ai-audio',
+    tags: ['music-generation', 'royalty-free', 'creators'],
+    isNew: true
+  },
+  {
+    id: 'deepl-write',
+    name: 'DeepL Write',
+    description: 'AI writing assistant that improves text with refined phrasing and vocabulary',
+    url: 'https://www.deepl.com/write',
+    category: 'ai-writing',
+    tags: ['writing-improvement', 'refinement', 'grammar'],
+    isNew: true
+  },
+  {
+    id: 'geneea',
+    name: 'Geneea',
+    description: 'AI text analytics platform for extracting insights from unstructured text data',
+    url: 'https://www.geneea.com',
+    category: 'ai-writing',
+    tags: ['text-analytics', 'insights', 'nlp'],
+    isNew: true
+  },
+  {
+    id: 'textio',
+    name: 'Textio',
+    description: 'AI writing platform that creates inclusive, effective job descriptions and communications',
+    url: 'https://textio.com',
+    category: 'ai-writing',
+    tags: ['inclusive-language', 'hr', 'communications'],
+    isNew: true
+  },
+  {
+    id: 'anthropic-business',
+    name: 'Anthropic Business',
+    description: 'Enterprise plan for Claude AI with enhanced security and larger context windows',
+    url: 'https://www.anthropic.com/business',
+    category: 'ai-chat',
+    tags: ['enterprise', 'security', 'claude'],
+    isNew: true
+  },
+  {
+    id: 'moveworks',
+    name: 'Moveworks',
+    description: 'AI platform for IT support and employee service automation',
+    url: 'https://www.moveworks.com',
+    category: 'ai-chat',
+    tags: ['it-support', 'automation', 'enterprise'],
+    isNew: true
+  },
+  {
+    id: 'chatgpt-enterprise',
+    name: 'ChatGPT Enterprise',
+    description: 'Enterprise version of ChatGPT with enhanced security, longer context, and data analysis',
+    url: 'https://openai.com/enterprise',
+    category: 'ai-chat',
+    tags: ['enterprise', 'security', 'data-analysis'],
+    isNew: true
+  },
+  {
+    id: 'drift-fastlane',
+    name: 'Drift Fastlane',
+    description: 'AI-powered conversational marketing platform for qualifying leads in real-time',
+    url: 'https://www.drift.com/fastlane',
+    category: 'ai-chat',
+    tags: ['lead-qualification', 'marketing', 'sales'],
+    isNew: true
+  },
+  {
+    id: 'forethought',
+    name: 'Forethought',
+    description: 'AI customer support platform that resolves tickets automatically and assists agents',
+    url: 'https://forethought.ai',
+    category: 'ai-chat',
+    tags: ['customer-support', 'ticket-resolution', 'agent-assistance'],
+    isNew: true
+  },
+  {
+    id: 'ada-ai',
+    name: 'Ada AI',
+    description: 'AI customer service automation platform that creates personalized experiences',
+    url: 'https://www.ada.cx',
+    category: 'ai-chat',
+    tags: ['customer-service', 'automation', 'personalization'],
+    isNew: true
+  },
+  {
+    id: 'kore-ai',
+    name: 'Kore.ai',
+    description: 'Enterprise conversational AI platform for building virtual assistants and chatbots',
+    url: 'https://kore.ai',
+    category: 'ai-chat',
+    tags: ['enterprise', 'virtual-assistants', 'chatbots'],
+    isNew: true
+  },
+  {
+    id: 'mindverse',
+    name: 'Mindverse',
+    description: 'AI platform for creating and deploying specialized AI agents for specific tasks',
+    url: 'https://www.mindverse.ai',
+    category: 'ai-chat',
+    tags: ['ai-agents', 'specialized', 'deployment'],
+    isNew: true
+  },
+  {
+    id: 'inflection-pi',
+    name: 'Inflection Pi 2',
+    description: 'Advanced conversational AI designed for personal, helpful, and harmless interactions',
+    url: 'https://inflection.ai/pi',
+    category: 'ai-chat',
+    tags: ['personal-assistant', 'conversational', 'helpful'],
+    isNew: true
+  },
+  {
+    id: 'chatling',
+    name: 'Chatling',
+    description: 'Platform for creating custom chatbots and virtual assistants without coding',
+    url: 'https://chatling.ai',
+    category: 'ai-chat',
+    tags: ['chatbot-builder', 'no-code', 'customization'],
+    isNew: true
+  },
+  {
+    id: 'langchain',
+    name: 'LangChain',
+    description: 'Framework for developing applications powered by language models with external integrations',
+    url: 'https://www.langchain.com',
+    category: 'ai-programming',
+    tags: ['framework', 'llm', 'development'],
+    isNew: true
+  },
+  {
+    id: 'autogpt',
+    name: 'AutoGPT',
+    description: 'Open-source AI agent that autonomously completes tasks using GPT-4',
+    url: 'https://github.com/Significant-Gravitas/AutoGPT',
+    category: 'ai-programming',
+    tags: ['ai-agent', 'autonomous', 'task-completion'],
+    isNew: true
+  },
+  {
+    id: 'llamaindex',
+    name: 'LlamaIndex',
+    description: 'Data framework for building LLM applications over custom data sources',
+    url: 'https://www.llamaindex.ai',
+    category: 'ai-programming',
+    tags: ['data-framework', 'custom-data', 'llm-applications'],
+    isNew: true
+  },
+  {
+    id: 'openai-devday',
+    name: 'OpenAI DevDay Models',
+    description: 'Latest AI models announced at OpenAI DevDay including GPT-4 Turbo and Vision capabilities',
+    url: 'https://openai.com/blog/new-models-and-developer-products-announced-at-devday',
+    category: 'ai-programming',
+    tags: ['gpt-4-turbo', 'vision', 'development'],
+    isNew: true
+  },
+  {
+    id: 'luma-generate',
+    name: 'Luma Generate',
+    description: 'AI-powered 3D model generation from text prompts for game and XR developers',
+    url: 'https://lumalabs.ai/generate',
+    category: 'ai-design',
+    tags: ['3d-generation', 'game-development', 'xr'],
+    isNew: true
+  },
+  {
+    id: 'hotpot-ai-art-generator',
+    name: 'Hotpot AI Art Generator',
+    description: 'AI art creation tool with design templates and technical optimization for app visuals',
+    url: 'https://hotpot.ai/art-generator',
+    category: 'ai-painting',
+    tags: ['app-visuals', 'technical', 'design-templates'],
+    isNew: true
+  },
+  {
+    id: 'microsoft-designer',
+    name: 'Microsoft Designer',
+    description: 'AI design app that creates high-quality graphics from text prompts',
+    url: 'https://designer.microsoft.com',
+    category: 'ai-design',
+    tags: ['graphics', 'microsoft', 'text-to-image'],
+    isNew: true
+  },
+  {
+    id: 'animeai',
+    name: 'AnimeAI',
+    description: 'Specialized AI art generator for creating anime-style illustrations and characters',
+    url: 'https://animeai.app',
+    category: 'ai-painting',
+    tags: ['anime', 'illustration', 'characters'],
+    isNew: true
+  },
+  {
+    id: 'playform',
+    name: 'Playform',
+    description: 'AI creative assistant for creating unique illustrations and visual concepts',
+    url: 'https://www.playform.io',
+    category: 'ai-painting',
+    tags: ['illustration', 'concept-art', 'creative'],
+    isNew: true
+  },
+  {
+    id: 'gemini-pro-vision',
+    name: 'Gemini Pro Vision',
+    description: 'Google\'s multimodal AI model with advanced vision capabilities for image understanding',
+    url: 'https://deepmind.google/technologies/gemini',
+    category: 'ai-chat',
+    tags: ['multimodal', 'vision', 'google'],
+    isNew: true
+  },
+  {
+    id: 'moonvalley',
+    name: 'MoonValley',
+    description: 'AI platform for creating realistic 3D landscapes and environments from text',
+    url: 'https://moonvalley.ai',
+    category: 'ai-design',
+    tags: ['landscapes', '3d-environments', 'realistic'],
+    isNew: true
+  },
+  {
+    id: 'nijijourney',
+    name: 'NijiJourney',
+    description: 'Specialized AI image generation for anime and manga art styles',
+    url: 'https://nijijourney.com',
+    category: 'ai-painting',
+    tags: ['anime', 'manga', 'stylized'],
+    isNew: true
+  },
+  {
+    id: 'stability-ai-api',
+    name: 'Stability AI API',
+    description: 'Developer access to Stability AI\'s image, language, and audio generation models',
+    url: 'https://stability.ai/api',
+    category: 'ai-programming',
+    tags: ['api', 'multimodal', 'developer'],
+    isNew: true
+  },
+  {
+    id: 'runway-research',
+    name: 'Runway Research',
+    description: 'Advanced AI research lab developing next-generation visual media tools',
+    url: 'https://research.runwayml.com',
+    category: 'ai-video',
+    tags: ['research', 'visual-media', 'cutting-edge'],
+    isNew: true
+  },
+  {
+    id: 'openassistant',
+    name: 'OpenAssistant',
+    description: 'Open-source conversational AI assistant that is fully transparent and accessible',
+    url: 'https://open-assistant.io',
+    category: 'ai-chat',
+    tags: ['open-source', 'transparent', 'accessible'],
+    isNew: true
+  },
+  {
+    id: 'vapi-ai',
+    name: 'Vapi AI',
+    description: 'Voice API for building AI voice agents that conduct natural phone conversations',
+    url: 'https://www.vapi.ai',
+    category: 'ai-audio',
+    tags: ['voice-api', 'phone', 'conversations'],
+    isNew: true
+  },
+  {
+    id: 'kaedim',
+    name: 'Kaedim',
+    description: 'AI tool that transforms 2D images into detailed 3D models',
+    url: 'https://www.kaedim3d.com',
+    category: 'ai-design',
+    tags: ['2d-to-3d', 'models', 'transformation'],
+    isNew: true
   }
 ]; 
