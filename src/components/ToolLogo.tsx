@@ -1,31 +1,120 @@
 import { Tool } from '@/data/tools';
-import Image from 'next/image';
+import { useState, useEffect } from 'react';
 
-// 根据工具ID返回相应的logo图标URL
-function getLogoUrl(toolId: string): string {
-  const logoMap: Record<string, string> = {
-    'midjourney': 'https://assets-global.website-files.com/6347244ba8f2880608c991f5/64a321b7f0c577ebb08a80fe_Midjourney_Emblem.png',
-    'chatgpt': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiE4OGTIrxZ1AHKArmn-SHiRzyEHe2Dp1UEQI4hXSVwA&s',
-    'dall-e': 'https://static.wikia.nocookie.net/logopedia/images/6/69/DALL-E_2022.svg/revision/latest?cb=20230605182908',
-    'github-copilot': 'https://github.githubassets.com/images/modules/site/copilot/cp-head-square.png',
-    'notion-ai': 'https://upload.wikimedia.org/wikipedia/commons/4/45/Notion_app_logo.png',
-    'runway': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8xQ9wgO7GoToLmL-xVrJ05B-rUg4S3SsSNHXG4pHR&s',
-    'elevenlabs': 'https://play-lh.googleusercontent.com/JdmB6jxOUQH0uz5J2-l4Bd_NbueSgjnQeUVbJ4LTzLr6LeGnrqJbwR4hRFzvKwIzLP00',
-    'synthesia': 'https://assets-global.website-files.com/61dc0796f359b6145bc06343/635a4e03fc93d3a2ccd4c15d_icon-square-synthesia-ai-p-500.png',
-    'copy-ai': 'https://slack-imgs.com/?c=1&o1=wi400.he400.si&url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F2%2F24%2FCopy.ai_logo.svg%2F1200px-Copy.ai_logo.svg.png',
-    'jasper': 'https://pbs.twimg.com/profile_images/1717954519265439744/ImyiW4d9_400x400.jpg',
-    'stable-diffusion': 'https://pub-3626123a908346a7a8be8d9295f44e26.r2.dev/generations/0ba77638-5a39-40c9-b0a9-7c61c55386e1-0.png',
-    'leonardo-ai': 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Leonardo_AI_logo.svg/1200px-Leonardo_AI_logo.svg.png',
-    'adobe-firefly': 'https://companieslogo.com/img/orig/ADBE-3c945fa9.png?t=1633513239',
-    'claude': 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Anthropic_Logo.png/1200px-Anthropic_Logo.png',
-    'bard': 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Google_Gemini_Logo.svg/1200px-Google_Gemini_Logo.svg.png',
-    'pi': 'https://play-lh.googleusercontent.com/V-ufxP7SUemGxnhT0m0pCuUwxLQj5jYzLYlT0_rcYYDk2d_GzgK2T8iwA99h4FBZeA'
+// 使用clearbit.com的Logo API获取公司官方LOGO
+function getCompanyLogoUrl(domain: string): string {
+  return `https://logo.clearbit.com/${domain}`;
+}
+
+// 从工具URL中提取域名
+function extractDomain(url: string): string {
+  try {
+    // 移除协议
+    let domain = url.replace(/(^\w+:|^)\/\//, '');
+    // 移除路径
+    domain = domain.split('/')[0];
+    // 移除www.
+    domain = domain.replace(/^www\./, '');
+    
+    return domain;
+  } catch (error) {
+    return '';
+  }
+}
+
+// 根据工具ID获取颜色（用于备用图标）
+function getToolColor(toolId: string): string {
+  const colorMap: Record<string, string> = {
+    'midjourney': '#0b65c6',
+    'chatgpt': '#10a37f',
+    'dall-e': '#ff9500',
+    'github-copilot': '#6e40c9',
+    'notion-ai': '#000000',
+    'runway': '#bd00ff',
+    'elevenlabs': '#fb516a',
+    'synthesia': '#625df5',
+    'copy-ai': '#4354fd',
+    'jasper': '#ff7a00',
+    'stable-diffusion': '#f96743',
+    'leonardo-ai': '#4a72f5',
+    'adobe-firefly': '#ff3366',
+    'claude': '#6344df',
+    'bard': '#8e44ad',
+    'pi': '#ff2d55'
   };
-
-  // 默认logo（如果没有匹配到）
-  const defaultLogo = 'https://cdn-icons-png.flaticon.com/512/2190/2190466.png';
   
-  return logoMap[toolId] || defaultLogo;
+  return colorMap[toolId] || '#3498db';
+}
+
+// 获取工具名称的缩写用于备用图标
+function getToolInitials(tool: Tool): string {
+  const name = tool.name;
+  
+  // 特殊处理一些工具名称
+  const specialCases: Record<string, string> = {
+    'midjourney': 'MJ',
+    'chatgpt': 'CG',
+    'dall-e': 'DE',
+    'github-copilot': 'GC',
+    'notion-ai': 'NA',
+    'runway': 'RW',
+    'elevenlabs': 'EL',
+    'synthesia': 'SY',
+    'copy-ai': 'CA',
+    'jasper': 'JP',
+    'stable-diffusion': 'SD',
+    'leonardo-ai': 'LA',
+    'adobe-firefly': 'AF',
+    'claude': 'CL',
+    'bard': 'GM', // Gemini
+    'pi': 'PI'
+  };
+  
+  if (specialCases[tool.id]) {
+    return specialCases[tool.id];
+  }
+  
+  // 提取名称中的大写字母作为缩写
+  const uppercaseLetters = name.match(/[A-Z]/g);
+  if (uppercaseLetters && uppercaseLetters.length >= 2) {
+    return uppercaseLetters.slice(0, 2).join('');
+  }
+  
+  // 如果有空格，取每个单词的首字母
+  if (name.includes(' ')) {
+    return name.split(' ')
+      .map(word => word[0].toUpperCase())
+      .slice(0, 2)
+      .join('');
+  }
+  
+  // 默认取首字母
+  return name.charAt(0).toUpperCase();
+}
+
+// 生成备用图标（当LOGO加载失败时使用）
+function FallbackIcon({ tool, size }: { tool: Tool; size: number }) {
+  const bgColor = getToolColor(tool.id);
+  const initials = getToolInitials(tool);
+  
+  return (
+    <div 
+      className="flex items-center justify-center rounded-md" 
+      style={{ 
+        width: size, 
+        height: size, 
+        backgroundColor: bgColor,
+        fontFamily: 'Arial, sans-serif'
+      }}
+    >
+      <span className="text-white font-bold" style={{ 
+        fontSize: Math.round(size * 0.45) + 'px',
+        lineHeight: 1
+      }}>
+        {initials}
+      </span>
+    </div>
+  );
 }
 
 interface ToolLogoProps {
@@ -33,16 +122,30 @@ interface ToolLogoProps {
   size?: number;
 }
 
-export default function ToolLogo({ tool, size = 24 }: ToolLogoProps) {
-  const logoUrl = getLogoUrl(tool.id);
+export default function ToolLogo({ tool, size = 36 }: ToolLogoProps) {
+  const [imgError, setImgError] = useState(false);
+  
+  // 从URL中提取域名，用于获取LOGO
+  const domain = extractDomain(tool.url);
+  const logoUrl = getCompanyLogoUrl(domain);
+  
+  if (imgError || !domain) {
+    return <FallbackIcon tool={tool} size={size} />;
+  }
   
   return (
-    <Image 
-      src={logoUrl} 
-      alt={`${tool.name} logo`} 
-      width={size} 
-      height={size} 
-      className="rounded-md" 
-    />
+    <div 
+      className="flex-shrink-0 flex items-center justify-center rounded-md overflow-hidden" 
+      style={{ width: size, height: size, minWidth: size }}
+    >
+      <img 
+        src={logoUrl}
+        alt={`${tool.name} logo`} 
+        width={size} 
+        height={size}
+        className="w-full h-full object-contain"
+        onError={() => setImgError(true)}
+      />
+    </div>
   );
 } 

@@ -10,9 +10,11 @@ export default function ToolCard({ tool }: ToolCardProps) {
   return (
     <div className="apple-card overflow-hidden">
       <div className="p-6">
-        <div className="flex items-center justify-between">
-          <div className="flex items-center space-x-3">
-            <ToolLogo tool={tool} size={28} />
+        <div className="flex items-center justify-between mb-3">
+          <div className="flex items-center gap-3">
+            <div className="flex-shrink-0">
+              <ToolLogo tool={tool} size={36} />
+            </div>
             <h3 className="text-xl font-semibold text-apple-800 dark:text-white">
               <Link 
                 href={tool.url} 
@@ -30,7 +32,7 @@ export default function ToolCard({ tool }: ToolCardProps) {
             </span>
           )}
         </div>
-        <p className="mt-3 text-apple-500 dark:text-apple-200">{tool.description}</p>
+        <p className="mt-2 text-apple-500 dark:text-apple-200">{tool.description}</p>
         <div className="mt-4 flex flex-wrap gap-2">
           {tool.tags.map((tag) => (
             <span
