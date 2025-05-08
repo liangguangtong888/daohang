@@ -1,3 +1,5 @@
+"use client";
+
 import { Tool } from '@/data/tools';
 import { useState, useEffect } from 'react';
 

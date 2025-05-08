@@ -1,3 +1,5 @@
+"use client";
+
 import { Category, Tool } from '@/data/tools';
 import ToolCard from './ToolCard';
 

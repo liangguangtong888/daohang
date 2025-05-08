@@ -1,3 +1,5 @@
+"use client";
+
 import { Tool } from '@/data/tools';
 import Link from 'next/link';
 import ToolLogo from './ToolLogo';
