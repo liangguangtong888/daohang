@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "AI Tools Directory - Discover the Best AI Tools",
@@ -29,6 +30,19 @@ export default function RootLayout({
           href="/favicon.ico" 
           sizes="any" 
         />
+        {/* Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-MJDGQBMQJ5"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-MJDGQBMQJ5');
+          `}
+        </Script>
       </head>
       <body className="antialiased bg-apple-50 dark:bg-apple-800 min-h-screen">
         {children}
