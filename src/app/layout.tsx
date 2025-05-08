@@ -43,6 +43,17 @@ export default function RootLayout({
             gtag('config', 'G-JEZJ7P1LZS');
           `}
         </Script>
+        
+        {/* Microsoft Clarity */}
+        <Script id="microsoft-clarity" strategy="afterInteractive">
+          {`
+            (function(c,l,a,r,i,t,y){
+                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+            })(window, document, "clarity", "script", "rg6zgqzoqk");
+          `}
+        </Script>
       </head>
       <body className="antialiased bg-apple-50 dark:bg-apple-800 min-h-screen">
         {children}
