@@ -1,13 +1,13 @@
 "use client";
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Suspense } from 'react';
 import { categories, tools } from '@/data/tools';
 import Navbar from '@/components/Navbar';
 import CategorySection from '@/components/CategorySection';
 import ToolCard from '@/components/ToolCard';
 import { useSearchParams } from 'next/navigation';
 
-export default function Home() {
+function SearchResults() {
   const [searchQuery, setSearchQuery] = useState('');
   const [searchResults, setSearchResults] = useState<typeof tools | null>(null);
   const searchParams = useSearchParams();
@@ -62,6 +62,66 @@ export default function Home() {
   };
 
   return (
+    <>
+      {/* Search Area */}
+      <div className="bg-apple-50 dark:bg-apple-900 py-10">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <form onSubmit={handleSearch} className="relative">
+            <input
+              type="text"
+              placeholder="Search AI tools..."
+              className="apple-input w-full py-4 pl-12 pr-4 text-lg shadow-apple"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+            />
+            <svg 
+              className="absolute left-4 top-1/2 transform -translate-y-1/2 h-5 w-5 text-apple-400" 
+              xmlns="http://www.w3.org/2000/svg" 
+              fill="none" 
+              viewBox="0 0 24 24" 
+              stroke="currentColor"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+            <button 
+              type="submit" 
+              className="absolute right-4 top-1/2 transform -translate-y-1/2 apple-button py-2 px-4"
+            >
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+
+      {/* Search Results */}
+      {searchResults && (
+        <div id="search-results" className="bg-apple-50 dark:bg-apple-900 py-8">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-2xl font-bold text-apple-800 dark:text-white mb-6">
+              Search Results ({searchResults.length})
+            </h2>
+            {searchResults.length > 0 ? (
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                {searchResults.map((tool) => (
+                  <ToolCard key={tool.id} tool={tool} />
+                ))}
+              </div>
+            ) : (
+              <div className="text-center py-12">
+                <p className="text-lg text-apple-600 dark:text-apple-300">
+                  No tools found matching "{searchQuery}".
+                </p>
+              </div>
+            )}
+          </div>
+        </div>
+      )}
+    </>
+  );
+}
+
+export default function Home() {
+  return (
     <div className="min-h-screen">
       <Navbar />
       <main>
@@ -90,59 +150,15 @@ export default function Home() {
           <div className="absolute inset-y-0 left-0 w-1/2 bg-gradient-to-l from-transparent to-apple-pink/10 dark:to-apple-pink/20" aria-hidden="true"></div>
         </div>
 
-        {/* Search Area */}
-        <div className="bg-apple-50 dark:bg-apple-900 py-10">
-          <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-            <form onSubmit={handleSearch} className="relative">
-              <input
-                type="text"
-                placeholder="Search AI tools..."
-                className="apple-input w-full py-4 pl-12 pr-4 text-lg shadow-apple"
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-              />
-              <svg 
-                className="absolute left-4 top-1/2 transform -translate-y-1/2 h-5 w-5 text-apple-400" 
-                xmlns="http://www.w3.org/2000/svg" 
-                fill="none" 
-                viewBox="0 0 24 24" 
-                stroke="currentColor"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-              </svg>
-              <button 
-                type="submit" 
-                className="absolute right-4 top-1/2 transform -translate-y-1/2 apple-button py-2 px-4"
-              >
-                Search
-              </button>
-            </form>
-          </div>
-        </div>
-
-        {/* Search Results */}
-        {searchResults && (
-          <div id="search-results" className="bg-apple-50 dark:bg-apple-900 py-8">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <h2 className="text-2xl font-bold text-apple-800 dark:text-white mb-6">
-                Search Results ({searchResults.length})
-              </h2>
-              {searchResults.length > 0 ? (
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                  {searchResults.map((tool) => (
-                    <ToolCard key={tool.id} tool={tool} />
-                  ))}
-                </div>
-              ) : (
-                <div className="text-center py-12">
-                  <p className="text-lg text-apple-600 dark:text-apple-300">
-                    No tools found matching "{searchQuery}".
-                  </p>
-                </div>
-              )}
+        <Suspense fallback={
+          <div className="bg-apple-50 dark:bg-apple-900 py-10">
+            <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="h-12 rounded apple-input animate-pulse"></div>
             </div>
           </div>
-        )}
+        }>
+          <SearchResults />
+        </Suspense>
 
         {/* Tool Categories */}
         <div id="tools" className="bg-apple-50 dark:bg-apple-900">
