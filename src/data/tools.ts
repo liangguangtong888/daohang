@@ -2173,5 +2173,869 @@ export const tools: Tool[] = [
     category: 'ai-design',
     tags: ['2d-to-3d', 'models', 'transformation'],
     isNew: true
+  },
+  {
+    id: 'claude-3-5-sonnet',
+    name: 'Claude 3.5 Sonnet',
+    description: 'Anthropic的最新AI模型，具有更强的推理能力和多模态理解能力',
+    url: 'https://www.anthropic.com/claude',
+    category: 'ai-chat',
+    tags: ['reasoning', 'multimodal', 'enterprise'],
+    isNew: true
+  },
+  {
+    id: 'adobe-project-sunrise',
+    name: 'Adobe Project Sunrise',
+    description: 'Adobe的生成式AI图像编辑工具，可实现高级编辑和内容生成',
+    url: 'https://www.adobe.com/products/photoshop/sunrise.html',
+    category: 'ai-painting',
+    tags: ['image-editing', 'professional', 'creative'],
+    isNew: true
+  },
+  {
+    id: 'udio',
+    name: 'Udio',
+    description: '基于AI的音乐创作平台，可生成原创音乐和歌曲',
+    url: 'https://udio.com',
+    category: 'ai-audio',
+    tags: ['music-creation', 'composition', 'songwriting'],
+    isNew: true
+  },
+  {
+    id: 'gpt-4-turbo-2024',
+    name: 'GPT-4 Turbo 2024',
+    description: 'OpenAI的最新大型语言模型，具有更新的知识库和改进的性能',
+    url: 'https://openai.com/gpt-4',
+    category: 'ai-chat',
+    tags: ['llm', 'knowledge', 'reasoning'],
+    isNew: true
+  },
+  {
+    id: 'perplexity-labs',
+    name: 'Perplexity Labs',
+    description: 'Perplexity的AI研究部门，开发最先进的搜索和信息检索技术',
+    url: 'https://labs.perplexity.ai',
+    category: 'ai-chat',
+    tags: ['research', 'search', 'information-retrieval'],
+    isNew: true
+  },
+  {
+    id: 'stability-skybox',
+    name: 'Stability Skybox',
+    description: 'Stability AI推出的360度全景图像生成工具，适用于VR和游戏开发',
+    url: 'https://stability.ai/skybox',
+    category: 'ai-design',
+    tags: ['panorama', 'vr', 'game-development'],
+    isNew: true
+  },
+  {
+    id: 'typeface-ai',
+    name: 'Typeface AI',
+    description: '企业级生成式AI平台，用于创建和管理品牌内容',
+    url: 'https://www.typeface.ai',
+    category: 'ai-writing',
+    tags: ['enterprise', 'brand', 'content-creation'],
+    isNew: true
+  },
+  {
+    id: 'ideogram-ai',
+    name: 'Ideogram AI',
+    description: '专注于精确文本渲染的AI图像生成工具',
+    url: 'https://ideogram.ai',
+    category: 'ai-painting',
+    tags: ['text-rendering', 'typography', 'design'],
+    isNew: true
+  },
+  {
+    id: 'luma-dream-machine',
+    name: 'Luma Dream Machine',
+    description: '用于创建高质量3D物体和场景的AI生成工具',
+    url: 'https://lumalabs.ai/dream-machine',
+    category: 'ai-design',
+    tags: ['3d-generation', 'objects', 'scenes'],
+    isNew: true
+  },
+  {
+    id: 'meta-llama-3-405b',
+    name: 'Meta Llama 3 405B',
+    description: 'Meta的最大开源语言模型，具有4050亿参数',
+    url: 'https://llama.meta.com',
+    category: 'ai-programming',
+    tags: ['open-source', 'llm', 'large-parameter'],
+    isNew: true
+  },
+  {
+    id: 'deepmind-gemma',
+    name: 'DeepMind Gemma',
+    description: 'Google DeepMind推出的开源、轻量级语言模型',
+    url: 'https://blog.google/technology/ai/google-gemma-open-model/',
+    category: 'ai-programming',
+    tags: ['open-source', 'lightweight', 'accessible'],
+    isNew: true
+  },
+  {
+    id: 'antrhopic-sonnet',
+    name: 'Anthropic Sonnet',
+    description: 'Anthropic专为企业应用优化的AI助手，注重可靠性和安全性',
+    url: 'https://www.anthropic.com/claude/sonnet',
+    category: 'ai-chat',
+    tags: ['enterprise', 'reliability', 'safety'],
+    isNew: true
+  },
+  {
+    id: 'nvidia-ace',
+    name: 'NVIDIA ACE',
+    description: 'NVIDIA的AI角色创建平台，用于游戏和互动体验',
+    url: 'https://www.nvidia.com/en-us/technologies/ace/',
+    category: 'ai-digital-human',
+    tags: ['game-characters', 'interactive', 'npc'],
+    isNew: true
+  },
+  {
+    id: 'versy',
+    name: 'Versy',
+    description: '专业级AI视频生成平台，提供高质量的广告和营销视频',
+    url: 'https://www.versy.ai',
+    category: 'ai-video',
+    tags: ['marketing', 'advertising', 'professional'],
+    isNew: true
+  },
+  {
+    id: 'meta-seamless',
+    name: 'Meta SeamlessM4T',
+    description: 'Meta的多语言、多模态翻译系统，支持100+种语言',
+    url: 'https://about.fb.com/news/2023/08/seamless-ai-translation-and-communication/',
+    category: 'ai-audio',
+    tags: ['translation', 'multilingual', 'speech'],
+    isNew: true
+  },
+  {
+    id: 'autodev',
+    name: 'AutoDev',
+    description: '自动化软件开发的AI平台，可以理解整个代码库并生成完整功能',
+    url: 'https://autodev.ai',
+    category: 'ai-programming',
+    tags: ['software-development', 'automation', 'code-generation'],
+    isNew: true
+  },
+  {
+    id: 'qdrant',
+    name: 'Qdrant',
+    description: '高性能向量数据库，专为AI和相似性搜索应用设计',
+    url: 'https://qdrant.tech',
+    category: 'ai-programming',
+    tags: ['vector-database', 'similarity-search', 'embeddings'],
+    isNew: true
+  },
+  {
+    id: 'airy',
+    name: 'Airy',
+    description: '自动将网站或应用转换为AI驱动的自然语言接口',
+    url: 'https://airy.co',
+    category: 'ai-programming',
+    tags: ['interface', 'conversion', 'natural-language'],
+    isNew: true
+  },
+  {
+    id: 'seaplane',
+    name: 'Seaplane',
+    description: '全球分布式AI基础设施，使模型部署和缩放更简单',
+    url: 'https://www.seaplane.io',
+    category: 'ai-programming',
+    tags: ['infrastructure', 'deployment', 'scaling'],
+    isNew: true
+  },
+  {
+    id: 'devin-ai',
+    name: 'Devin AI',
+    description: '第一个完全自主的AI软件工程师，可以设计、构建和部署软件',
+    url: 'https://www.cognition.ai',
+    category: 'ai-programming',
+    tags: ['autonomous', 'software-engineer', 'development'],
+    isNew: true
+  },
+  {
+    id: 'bitable',
+    name: 'Bitable',
+    description: '基于AI的低代码数据库平台，专注于团队协作和工作流自动化',
+    url: 'https://www.bitable.com',
+    category: 'ai-office',
+    tags: ['database', 'low-code', 'collaboration'],
+    isNew: true
+  },
+  {
+    id: 'claude-instant',
+    name: 'Claude Instant',
+    description: 'Anthropic提供的轻量级、响应迅速的AI助手版本',
+    url: 'https://www.anthropic.com/claude/instant',
+    category: 'ai-chat',
+    tags: ['fast', 'lightweight', 'cost-effective'],
+    isNew: true
+  },
+  {
+    id: 'reflect',
+    name: 'Reflect',
+    description: 'AI驱动的笔记和思维工具，帮助用户整理想法和发现联系',
+    url: 'https://reflect.app',
+    category: 'ai-office',
+    tags: ['notes', 'productivity', 'knowledge-management'],
+    isNew: true
+  },
+  {
+    id: 'upscayl',
+    name: 'Upscayl',
+    description: '开源的AI图像放大工具，无需云服务即可提高图像质量',
+    url: 'https://www.upscayl.org',
+    category: 'ai-painting',
+    tags: ['upscaling', 'enhancement', 'open-source'],
+    isNew: true
+  },
+  {
+    id: 'coqui-ai',
+    name: 'Coqui AI',
+    description: '先进的语音合成技术，可创建自然、富有表现力的AI声音',
+    url: 'https://coqui.ai',
+    category: 'ai-audio',
+    tags: ['speech-synthesis', 'voice-cloning', 'emotional'],
+    isNew: true
+  },
+  {
+    id: 'opus-clip',
+    name: 'Opus Clip',
+    description: 'AI视频剪辑工具，可自动识别并提取视频中最引人注目的片段',
+    url: 'https://www.opus.pro/clip',
+    category: 'ai-video',
+    tags: ['video-editing', 'highlights', 'automation'],
+    isNew: true
+  },
+  {
+    id: 'munch',
+    name: 'Munch',
+    description: 'AI驱动的工具，将长视频自动转换为社交媒体适用的短视频',
+    url: 'https://www.getmunch.com',
+    category: 'ai-video',
+    tags: ['short-form', 'social-media', 'repurposing'],
+    isNew: true
+  },
+  {
+    id: 'alicent',
+    name: 'Alicent',
+    description: 'AI视频分析和增强工具，自动改进视频质量和叙事结构',
+    url: 'https://www.alicent.ai',
+    category: 'ai-video',
+    tags: ['analysis', 'enhancement', 'storytelling'],
+    isNew: true
+  },
+  {
+    id: 'lindy',
+    name: 'Lindy',
+    description: 'AI阅读助手，可总结网页和长文档，提取关键信息',
+    url: 'https://www.lindy.ai',
+    category: 'ai-office',
+    tags: ['reading', 'summarization', 'knowledge'],
+    isNew: true
+  },
+  {
+    id: 'humata',
+    name: 'Humata',
+    description: 'AI文档分析工具，允许用户向任何PDF提问并获得即时回答',
+    url: 'https://www.humata.ai',
+    category: 'ai-office',
+    tags: ['pdf', 'document-analysis', 'qa'],
+    isNew: true
+  },
+  {
+    id: 'glasp',
+    name: 'Glasp',
+    description: '社交化AI高亮笔记工具，收集和分享网络上的见解',
+    url: 'https://glasp.co',
+    category: 'ai-office',
+    tags: ['highlighting', 'notes', 'social'],
+    isNew: true
+  },
+  {
+    id: 'mem',
+    name: 'Mem',
+    description: 'AI驱动的工作空间，自动组织笔记并利用知识创建内容',
+    url: 'https://mem.ai',
+    category: 'ai-office',
+    tags: ['workspace', 'organization', 'knowledge'],
+    isNew: true
+  },
+  {
+    id: 'supertone',
+    name: 'Supertone',
+    description: '专业级AI音频处理工具，用于音乐和娱乐产业',
+    url: 'https://supertone.ai',
+    category: 'ai-audio',
+    tags: ['music', 'production', 'professional'],
+    isNew: true
+  },
+  {
+    id: 'suno',
+    name: 'Suno',
+    description: '突破性AI音乐生成平台，可基于文本提示创作完整歌曲',
+    url: 'https://www.suno.ai',
+    category: 'ai-audio',
+    tags: ['music-generation', 'composition', 'lyrics'],
+    isNew: true
+  },
+  {
+    id: 'udio-studio',
+    name: 'Udio Studio',
+    description: '专业AI音乐创作套件，为创作者提供高级编曲和制作工具',
+    url: 'https://studio.udio.com',
+    category: 'ai-audio',
+    tags: ['music-production', 'professional', 'studio'],
+    isNew: true
+  },
+  {
+    id: 'soundstorm',
+    name: 'SoundStorm',
+    description: 'Google DeepMind的高保真AI音频生成模型',
+    url: 'https://deepmind.google/discover/blog/soundstorm-efficient-parallel-audio-generation/',
+    category: 'ai-audio',
+    tags: ['high-fidelity', 'research', 'google'],
+    isNew: true
+  },
+  {
+    id: 'soundful',
+    name: 'Soundful',
+    description: 'AI音乐生成平台，为创作者和企业提供免版税音乐',
+    url: 'https://soundful.com',
+    category: 'ai-audio',
+    tags: ['royalty-free', 'commercial', 'creators'],
+    isNew: true
+  },
+  {
+    id: 'audoir',
+    name: 'Audoir',
+    description: 'AI驱动的音频脚本和广告文案生成工具',
+    url: 'https://www.audoir.com',
+    category: 'ai-audio',
+    tags: ['scriptwriting', 'advertising', 'copy'],
+    isNew: true
+  },
+  {
+    id: 'clipdrop',
+    name: 'ClipDrop',
+    description: 'Stability AI的视觉创意套件，包含多种图像生成和编辑工具',
+    url: 'https://clipdrop.co',
+    category: 'ai-painting',
+    tags: ['image-editing', 'creative-suite', 'professional'],
+    isNew: true
+  },
+  {
+    id: 'anthropic-haiku',
+    name: 'Anthropic Haiku',
+    description: 'Anthropic最快速、最轻量级的AI助手，针对简单任务优化',
+    url: 'https://www.anthropic.com/claude/haiku',
+    category: 'ai-chat',
+    tags: ['fast', 'lightweight', 'simple-tasks'],
+    isNew: true
+  },
+  {
+    id: 'midjourney-niji',
+    name: 'Midjourney Niji Mode',
+    description: 'Midjourney专为动漫和插画风格优化的特殊模式',
+    url: 'https://docs.midjourney.com/docs/niji',
+    category: 'ai-painting',
+    tags: ['anime', 'illustration', 'stylized'],
+    isNew: true
+  },
+  {
+    id: 'opus-voice-ai',
+    name: 'Opus Voice AI',
+    description: '先进的AI配音解决方案，可生成自然、富有情感的人声',
+    url: 'https://www.opus.pro/voice',
+    category: 'ai-audio',
+    tags: ['voice-over', 'narration', 'emotional'],
+    isNew: true
+  },
+  {
+    id: 'metahuman',
+    name: 'MetaHuman',
+    description: 'Epic Games的高保真数字人类创建平台',
+    url: 'https://www.unrealengine.com/en-US/metahuman',
+    category: 'ai-digital-human',
+    tags: ['photorealistic', 'game-development', 'animation'],
+    isNew: true
+  },
+  {
+    id: 'd-id-studio',
+    name: 'D-ID Studio',
+    description: '数字人类视频创建平台，将静态图像转换为会说话的头像',
+    url: 'https://www.d-id.com/creative-reality-studio/',
+    category: 'ai-digital-human',
+    tags: ['talking-avatar', 'video-creation', 'presentations'],
+    isNew: true
+  },
+  {
+    id: 'synthesia-avatar',
+    name: 'Synthesia AVATAR',
+    description: '专业AI视频化身平台，支持多语言内容创建',
+    url: 'https://www.synthesia.io/avatar',
+    category: 'ai-digital-human',
+    tags: ['multilingual', 'video-production', 'professional'],
+    isNew: true
+  },
+  {
+    id: 'sora-api',
+    name: 'Sora API',
+    description: 'OpenAI的文本到视频API，使开发者能够集成先进的视频生成功能',
+    url: 'https://openai.com/sora',
+    category: 'ai-video',
+    tags: ['api', 'developer', 'integration'],
+    isNew: true
+  },
+  {
+    id: 'eleven-multilingual',
+    name: 'ElevenLabs Multilingual',
+    description: 'ElevenLabs的多语言语音合成平台，支持30+种语言',
+    url: 'https://elevenlabs.io/multilingual',
+    category: 'ai-audio',
+    tags: ['multilingual', 'speech-synthesis', 'global'],
+    isNew: true
+  },
+  {
+    id: 'pictory',
+    name: 'Pictory',
+    description: 'AI视频创建平台，将长形式内容自动转换为短视频',
+    url: 'https://pictory.ai',
+    category: 'ai-video',
+    tags: ['content-repurposing', 'automation', 'marketing'],
+    isNew: true
+  },
+  {
+    id: 'tavus',
+    name: 'Tavus',
+    description: '个性化AI视频平台，可自动为每个观众定制视频内容',
+    url: 'https://www.tavus.io',
+    category: 'ai-video',
+    tags: ['personalization', 'sales', 'outreach'],
+    isNew: true
+  },
+  {
+    id: 'runway-gen-3',
+    name: 'Runway Gen-3',
+    description: 'Runway的第三代AI视频生成模型，提供更高的质量和创意控制',
+    url: 'https://runwayml.com/gen-3',
+    category: 'ai-video',
+    tags: ['high-quality', 'creative-control', 'generation'],
+    isNew: true
+  },
+  {
+    id: 'lumen5',
+    name: 'Lumen5',
+    description: 'AI视频创建平台，专注于将博客和文章转换为营销视频',
+    url: 'https://lumen5.com',
+    category: 'ai-video',
+    tags: ['marketing', 'content-repurposing', 'social-media'],
+    isNew: true
+  },
+  {
+    id: 'deepbrain-ai',
+    name: 'DeepBrain AI',
+    description: 'AI视频合成平台，创建逼真的虚拟人类进行演讲和演示',
+    url: 'https://www.deepbrain.io',
+    category: 'ai-digital-human',
+    tags: ['video-synthesis', 'presentations', 'corporate'],
+    isNew: true
+  },
+  {
+    id: 'wonder-dynamics',
+    name: 'Wonder Dynamics',
+    description: '为电影制作人和内容创作者提供的AI动画和视觉效果工具',
+    url: 'https://www.wonderdynamics.com',
+    category: 'ai-video',
+    tags: ['animation', 'visual-effects', 'filmmaking'],
+    isNew: true
+  },
+  {
+    id: 'voicemod-ai',
+    name: 'Voicemod AI',
+    description: 'AI语音变声器和音效生成器，用于游戏和内容创作',
+    url: 'https://www.voicemod.net/ai-voices',
+    category: 'ai-audio',
+    tags: ['voice-changer', 'gaming', 'content-creation'],
+    isNew: true
+  },
+  {
+    id: 'stability-image-to-video',
+    name: 'Stability Image to Video',
+    description: 'Stability AI的工具，可将静态图像转换为动态视频',
+    url: 'https://stability.ai/news/stable-video-image-to-video-generation',
+    category: 'ai-video',
+    tags: ['image-to-video', 'animation', 'motion'],
+    isNew: true
+  },
+  {
+    id: 'glimmer-ai',
+    name: 'Glimmer AI',
+    description: 'AI短视频创作工具，专为社交媒体内容优化',
+    url: 'https://www.glimmerai.tech',
+    category: 'ai-video',
+    tags: ['short-form', 'social-media', 'trends'],
+    isNew: true
+  },
+  {
+    id: 'elai-presenter',
+    name: 'Elai Presenter',
+    description: 'AI驱动的演示视频创建工具，无需摄像设备',
+    url: 'https://elai.io/ai-presenter',
+    category: 'ai-digital-human',
+    tags: ['presentations', 'business', 'education'],
+    isNew: true
+  },
+  {
+    id: 'rask-ai',
+    name: 'Rask AI',
+    description: 'AI视频翻译和配音平台，支持多语言内容本地化',
+    url: 'https://www.rask.ai',
+    category: 'ai-video',
+    tags: ['translation', 'dubbing', 'localization'],
+    isNew: true
+  },
+  {
+    id: 'vidyo-ai',
+    name: 'Vidyo AI',
+    description: '自动将长视频剪辑为社交媒体适用的短内容',
+    url: 'https://vidyo.ai',
+    category: 'ai-video',
+    tags: ['repurposing', 'short-form', 'automation'],
+    isNew: true
+  },
+  {
+    id: 'steve-ai',
+    name: 'Steve AI',
+    description: 'AI视频制作平台，可从文本脚本自动创建动画视频',
+    url: 'https://www.steve.ai',
+    category: 'ai-video',
+    tags: ['animation', 'marketing', 'explainer'],
+    isNew: true
+  },
+  {
+    id: 'wizville',
+    name: 'Wizville',
+    description: '电商和品牌的AI生成产品演示视频工具',
+    url: 'https://www.wizville.com',
+    category: 'ai-video',
+    tags: ['product-demo', 'e-commerce', 'marketing'],
+    isNew: true
+  },
+  {
+    id: 'leia-ai',
+    name: 'Leia AI',
+    description: '3D内容创建平台，将2D图像转换为沉浸式3D体验',
+    url: 'https://www.leiainc.com',
+    category: 'ai-design',
+    tags: ['3d-conversion', 'immersive', 'lightfield'],
+    isNew: true
+  },
+  {
+    id: 'scenario',
+    name: 'Scenario',
+    description: 'AI游戏资产生成工具，为游戏开发者创建独特内容',
+    url: 'https://www.scenario.com',
+    category: 'ai-design',
+    tags: ['game-assets', 'development', 'textures'],
+    isNew: true
+  },
+  {
+    id: 'masterpiece-studio',
+    name: 'Masterpiece Studio',
+    description: 'AI驱动的3D创作平台，简化了3D建模和动画过程',
+    url: 'https://masterpiecestudio.com',
+    category: 'ai-design',
+    tags: ['3d-modeling', 'animation', 'creation'],
+    isNew: true
+  },
+  {
+    id: 'spline-ai',
+    name: 'Spline AI',
+    description: '基于AI的3D设计工具，通过简单提示创建复杂3D场景',
+    url: 'https://spline.design',
+    category: 'ai-design',
+    tags: ['3d-design', 'interactive', 'web3d'],
+    isNew: true
+  },
+  {
+    id: 'rive-ai',
+    name: 'Rive AI',
+    description: '交互式动画设计工具，使用AI简化创建过程',
+    url: 'https://rive.app',
+    category: 'ai-design',
+    tags: ['animation', 'interactive', 'design'],
+    isNew: true
+  },
+  {
+    id: 'magician-figma',
+    name: 'Magician for Figma',
+    description: 'Figma的AI设计助手，通过文本提示生成和编辑设计元素',
+    url: 'https://magician.design',
+    category: 'ai-design',
+    tags: ['figma', 'plugin', 'design-assistant'],
+    isNew: true
+  },
+  {
+    id: 'diagram',
+    name: 'Diagram',
+    description: '为产品设计师打造的AI设计和原型工具',
+    url: 'https://diagram.com',
+    category: 'ai-design',
+    tags: ['product-design', 'prototyping', 'ui-ux'],
+    isNew: true
+  },
+  {
+    id: 'galileo-ai',
+    name: 'Galileo AI',
+    description: 'AI界面设计工具，根据描述生成完整UI设计',
+    url: 'https://www.usegalileo.ai',
+    category: 'ai-design',
+    tags: ['ui-design', 'interface', 'generation'],
+    isNew: true
+  },
+  {
+    id: 'mokker',
+    name: 'Mokker',
+    description: 'AI产品展示图片生成器，创建专业级电商视觉内容',
+    url: 'https://mokker.ai',
+    category: 'ai-design',
+    tags: ['product-photography', 'e-commerce', 'visualization'],
+    isNew: true
+  },
+  {
+    id: 'aoi',
+    name: 'AOI',
+    description: 'AI驱动的图片编辑工具，专为优化电商产品图片设计',
+    url: 'https://www.aoi.ai',
+    category: 'ai-painting',
+    tags: ['e-commerce', 'product-photography', 'editing'],
+    isNew: true
+  },
+  {
+    id: 'khroma',
+    name: 'Khroma',
+    description: 'AI色彩工具，学习用户偏好生成个性化色彩组合',
+    url: 'https://www.khroma.co',
+    category: 'ai-design',
+    tags: ['color', 'palettes', 'personalization'],
+    isNew: true
+  },
+  {
+    id: 'vizcom',
+    name: 'Vizcom',
+    description: 'AI设计工具，将粗略草图转换为精致的产品渲染图',
+    url: 'https://www.vizcom.ai',
+    category: 'ai-design',
+    tags: ['product-design', 'rendering', 'sketch-to-image'],
+    isNew: true
+  },
+  {
+    id: 'ai-palette',
+    name: 'AI Palette',
+    description: '食品行业AI趋势预测平台，识别新兴口味和消费者偏好',
+    url: 'https://www.aipalette.com',
+    category: 'ai-office',
+    tags: ['food-industry', 'trend-prediction', 'market-research'],
+    isNew: true
+  },
+  {
+    id: 'colormind',
+    name: 'Colormind',
+    description: 'AI色彩生成器，创建和分析和谐的色彩搭配',
+    url: 'http://colormind.io',
+    category: 'ai-design',
+    tags: ['color-scheme', 'palette', 'design'],
+    isNew: true
+  },
+  {
+    id: 'namelix',
+    name: 'Namelix',
+    description: 'AI品牌命名工具，生成短小、独特且易记的业务名称',
+    url: 'https://namelix.com',
+    category: 'ai-writing',
+    tags: ['branding', 'naming', 'business'],
+    isNew: true
+  },
+  {
+    id: 'looka',
+    name: 'Looka',
+    description: 'AI标志生成器和品牌设计平台',
+    url: 'https://looka.com',
+    category: 'ai-design',
+    tags: ['logo', 'branding', 'design'],
+    isNew: true
+  },
+  {
+    id: 'sitekick',
+    name: 'Sitekick',
+    description: 'AI网站构建器，可在几分钟内创建专业登陆页面',
+    url: 'https://www.sitekick.ai',
+    category: 'ai-design',
+    tags: ['website', 'landing-page', 'no-code'],
+    isNew: true
+  },
+  {
+    id: 'brandmark',
+    name: 'Brandmark',
+    description: '使用AI创建独特标志和品牌标识的专业工具',
+    url: 'https://brandmark.io',
+    category: 'ai-design',
+    tags: ['logo', 'brand-identity', 'professional'],
+    isNew: true
+  },
+  {
+    id: 'lumiere',
+    name: 'Lumiere',
+    description: 'Google的文本到视频AI模型，可创建高品质、连贯的视频内容',
+    url: 'https://lumiere-video.github.io',
+    category: 'ai-video',
+    tags: ['text-to-video', 'research', 'google'],
+    isNew: true
+  },
+  {
+    id: 'aiva',
+    name: 'AIVA',
+    description: 'AI作曲助手，创作情感电影配乐和游戏音乐',
+    url: 'https://www.aiva.ai',
+    category: 'ai-audio',
+    tags: ['composition', 'soundtrack', 'emotional'],
+    isNew: true
+  },
+  {
+    id: 'riffusion',
+    name: 'Riffusion',
+    description: '基于稳定扩散的AI音乐生成模型，将文本转换为音乐',
+    url: 'https://www.riffusion.com',
+    category: 'ai-audio',
+    tags: ['music-generation', 'text-to-music', 'diffusion'],
+    isNew: true
+  },
+  {
+    id: 'soundify',
+    name: 'Soundify',
+    description: 'AI音乐生成工具，为创作者提供免版税音乐',
+    url: 'https://soundify.ai',
+    category: 'ai-audio',
+    tags: ['music-generation', 'royalty-free', 'creators'],
+    isNew: true
+  },
+  {
+    id: 'harmonai',
+    name: 'Harmonai',
+    description: '开源AI音乐生成社区和工具集',
+    url: 'https://www.harmonai.org',
+    category: 'ai-audio',
+    tags: ['open-source', 'community', 'music-generation'],
+    isNew: true
+  },
+  {
+    id: 'beatoven',
+    name: 'Beatoven.ai',
+    description: 'AI音乐创作平台，生成与内容情感匹配的独特背景音乐',
+    url: 'https://www.beatoven.ai',
+    category: 'ai-audio',
+    tags: ['background-music', 'emotional', 'content-creation'],
+    isNew: true
+  },
+  {
+    id: 'altered-studio',
+    name: 'Altered Studio',
+    description: 'AI声音克隆和编辑平台，提供专业级音频处理',
+    url: 'https://www.altered.ai/studio',
+    category: 'ai-audio',
+    tags: ['voice-cloning', 'editing', 'professional'],
+    isNew: true
+  },
+  {
+    id: 'boomy',
+    name: 'Boomy',
+    description: 'AI音乐创作工具，让任何人能够创作和发布原创音乐',
+    url: 'https://boomy.com',
+    category: 'ai-audio',
+    tags: ['music-creation', 'publishing', 'accessibility'],
+    isNew: true
+  },
+  {
+    id: 'soundful-studio',
+    name: 'Soundful Studio',
+    description: '专业级AI音乐创作平台，为商业用途提供高质量音乐',
+    url: 'https://studio.soundful.com',
+    category: 'ai-audio',
+    tags: ['professional', 'commercial', 'high-quality'],
+    isNew: true
+  },
+  {
+    id: 'prompts-ai',
+    name: 'Prompts AI',
+    description: '专业提示工程平台，优化AI模型输出质量',
+    url: 'https://prompts.ai',
+    category: 'ai-prompts',
+    tags: ['prompt-engineering', 'optimization', 'professional'],
+    isNew: true
+  },
+  {
+    id: 'promptify',
+    name: 'Promptify',
+    description: 'AI提示库和优化工具，提高生成内容质量',
+    url: 'https://promptify.com',
+    category: 'ai-prompts',
+    tags: ['library', 'optimization', 'generation'],
+    isNew: true
+  },
+  {
+    id: 'phraser',
+    name: 'Phraser',
+    description: 'AI提示工程和优化工具，专注于视觉创意生成',
+    url: 'https://phraser.tech',
+    category: 'ai-prompts',
+    tags: ['visual', 'creative', 'optimization'],
+    isNew: true
+  },
+  {
+    id: 'promptstacks',
+    name: 'PromptStacks',
+    description: '专业提示工程平台，针对不同AI模型提供优化提示',
+    url: 'https://promptstacks.com',
+    category: 'ai-prompts',
+    tags: ['multi-model', 'professional', 'optimization'],
+    isNew: true
+  },
+  {
+    id: 'krea',
+    name: 'Krea',
+    description: 'AI创意搜索引擎，发现和适应提示以生成图像',
+    url: 'https://www.krea.ai',
+    category: 'ai-prompts',
+    tags: ['search', 'discovery', 'adaptation'],
+    isNew: true
+  },
+  {
+    id: 'gptduck',
+    name: 'GPTDuck',
+    description: '开源提示库和共享平台，促进AI提示社区合作',
+    url: 'https://www.gptduck.com',
+    category: 'ai-prompts',
+    tags: ['open-source', 'community', 'collaboration'],
+    isNew: true
+  },
+  {
+    id: 'promptsource',
+    name: 'PromptSource',
+    description: '研究人员和开发者的协作提示工程平台',
+    url: 'https://github.com/bigscience-workshop/promptsource',
+    category: 'ai-prompts',
+    tags: ['research', 'collaboration', 'development'],
+    isNew: true
+  },
+  {
+    id: 'creitive',
+    name: 'Creitive',
+    description: 'AI创意助手，为设计师和营销人员提供提示优化',
+    url: 'https://creitive.ai',
+    category: 'ai-prompts',
+    tags: ['creative', 'marketing', 'design'],
+    isNew: true
   }
 ]; 
