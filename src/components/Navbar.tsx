@@ -10,9 +10,9 @@ export default function Navbar() {
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
     if (searchQuery.trim()) {
-      // 在这里可以实现搜索逻辑
-      console.log('搜索查询:', searchQuery);
-      // 如果想要实现页面跳转，可以使用window.location.href = `/search?q=${encodeURIComponent(searchQuery)}`
+      // Implement search logic here
+      console.log('Search query:', searchQuery);
+      // You can use window.location.href = `/search?q=${encodeURIComponent(searchQuery)}` to redirect
     }
   };
 

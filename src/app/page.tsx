@@ -26,7 +26,7 @@ export default function Home() {
     );
     
     setSearchResults(results);
-    // 滚动到结果区域
+    // Scroll to results area
     document.getElementById('search-results')?.scrollIntoView({ behavior: 'smooth' });
   };
 
@@ -83,7 +83,7 @@ export default function Home() {
                 type="submit" 
                 className="absolute right-4 top-1/2 transform -translate-y-1/2 apple-button py-2 px-4"
               >
-                搜索
+                Search
               </button>
             </form>
           </div>
@@ -94,7 +94,7 @@ export default function Home() {
           <div id="search-results" className="bg-apple-50 dark:bg-apple-900 py-8">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <h2 className="text-2xl font-bold text-apple-800 dark:text-white mb-6">
-                搜索结果 ({searchResults.length})
+                Search Results ({searchResults.length})
               </h2>
               {searchResults.length > 0 ? (
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -105,7 +105,7 @@ export default function Home() {
               ) : (
                 <div className="text-center py-12">
                   <p className="text-lg text-apple-600 dark:text-apple-300">
-                    没有找到匹配 "{searchQuery}" 的工具。
+                    No tools found matching "{searchQuery}".
                   </p>
                 </div>
               )}
