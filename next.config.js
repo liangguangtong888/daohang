@@ -3,7 +3,12 @@ const nextConfig = {
   output: 'export',
   images: {
     unoptimized: true,
-    domains: ['lgtthree.xyz', 'www.lgtthree.xyz'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '**',
+      },
+    ],
   },
 };
 

@@ -1,5 +1,6 @@
 import { Tool } from '@/data/tools';
 import Link from 'next/link';
+import ToolLogo from './ToolLogo';
 
 interface ToolCardProps {
   tool: Tool;
@@ -10,16 +11,19 @@ export default function ToolCard({ tool }: ToolCardProps) {
     <div className="apple-card overflow-hidden">
       <div className="p-6">
         <div className="flex items-center justify-between">
-          <h3 className="text-xl font-semibold text-apple-800 dark:text-white">
-            <Link 
-              href={tool.url} 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="hover:text-apple-blue transition-colors duration-200"
-            >
-              {tool.name}
-            </Link>
-          </h3>
+          <div className="flex items-center space-x-3">
+            <ToolLogo tool={tool} size={28} />
+            <h3 className="text-xl font-semibold text-apple-800 dark:text-white">
+              <Link 
+                href={tool.url} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="hover:text-apple-blue transition-colors duration-200"
+              >
+                {tool.name}
+              </Link>
+            </h3>
+          </div>
           {tool.isNew && (
             <span className="px-3 py-1 text-xs font-semibold text-white bg-apple-green rounded-full">
               New
