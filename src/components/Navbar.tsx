@@ -1,7 +1,7 @@
 "use client";
 
 import Link from 'next/link';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { tools } from '@/data/tools';
 import { useRouter } from 'next/navigation';
 
@@ -12,22 +12,17 @@ export default function Navbar() {
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
+    console.log('Search form submitted', searchQuery);
+    
     if (searchQuery.trim()) {
-      // Search in tools data
-      const query = searchQuery.toLowerCase();
-      const hasResults = tools.some(
-        tool => 
-          tool.name.toLowerCase().includes(query) || 
-          tool.description.toLowerCase().includes(query) || 
-          tool.tags?.some(tag => tag.toLowerCase().includes(query))
-      );
+      console.log('Search query is valid, navigating...');
       
       // Navigate to home page with search parameter
-      router.push(`/?q=${encodeURIComponent(searchQuery)}`);
-      
-      // If we're already on the home page, we need to reload the search
       if (window.location.pathname === '/') {
+        // If we're already on the home page, we need to force a refresh
         window.location.href = `/?q=${encodeURIComponent(searchQuery)}`;
+      } else {
+        router.push(`/?q=${encodeURIComponent(searchQuery)}`);
       }
     }
   };
@@ -74,11 +69,12 @@ export default function Navbar() {
               />
               <button 
                 type="submit" 
-                className="absolute right-3 top-1/2 transform -translate-y-1/2"
+                onClick={handleSearch}
+                className="absolute right-3 top-1/2 transform -translate-y-1/2 cursor-pointer bg-transparent border-none p-1 rounded-full hover:bg-apple-100 dark:hover:bg-apple-700"
                 aria-label="Search"
               >
                 <svg 
-                  className="h-5 w-5 text-apple-400" 
+                  className="h-5 w-5 text-apple-400 hover:text-apple-600" 
                   xmlns="http://www.w3.org/2000/svg" 
                   fill="none" 
                   viewBox="0 0 24 24" 
@@ -143,11 +139,12 @@ export default function Navbar() {
               />
               <button 
                 type="submit" 
-                className="absolute right-7 top-1/2 transform -translate-y-1/2"
+                onClick={handleSearch}
+                className="absolute right-7 top-1/2 transform -translate-y-1/2 cursor-pointer bg-transparent border-none p-1 rounded-full hover:bg-apple-100 dark:hover:bg-apple-700"
                 aria-label="Search"
               >
                 <svg 
-                  className="h-5 w-5 text-apple-400" 
+                  className="h-5 w-5 text-apple-400 hover:text-apple-600" 
                   xmlns="http://www.w3.org/2000/svg" 
                   fill="none" 
                   viewBox="0 0 24 24" 
