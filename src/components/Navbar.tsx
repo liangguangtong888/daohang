@@ -2,17 +2,33 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
+import { tools } from '@/data/tools';
+import { useRouter } from 'next/navigation';
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
+  const router = useRouter();
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
     if (searchQuery.trim()) {
-      // Implement search logic here
-      console.log('Search query:', searchQuery);
-      // You can use window.location.href = `/search?q=${encodeURIComponent(searchQuery)}` to redirect
+      // Search in tools data
+      const query = searchQuery.toLowerCase();
+      const hasResults = tools.some(
+        tool => 
+          tool.name.toLowerCase().includes(query) || 
+          tool.description.toLowerCase().includes(query) || 
+          tool.tags?.some(tag => tag.toLowerCase().includes(query))
+      );
+      
+      // Navigate to home page with search parameter
+      router.push(`/?q=${encodeURIComponent(searchQuery)}`);
+      
+      // If we're already on the home page, we need to reload the search
+      if (window.location.pathname === '/') {
+        window.location.href = `/?q=${encodeURIComponent(searchQuery)}`;
+      }
     }
   };
 

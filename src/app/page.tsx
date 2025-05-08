@@ -1,33 +1,48 @@
 "use client";
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { categories, tools } from '@/data/tools';
 import Navbar from '@/components/Navbar';
 import CategorySection from '@/components/CategorySection';
 import ToolCard from '@/components/ToolCard';
+import { useSearchParams } from 'next/navigation';
 
 export default function Home() {
   const [searchQuery, setSearchQuery] = useState('');
   const [searchResults, setSearchResults] = useState<typeof tools | null>(null);
+  const searchParams = useSearchParams();
 
-  const handleSearch = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!searchQuery.trim()) {
+  // Get search query from URL parameters
+  useEffect(() => {
+    const query = searchParams.get('q');
+    if (query) {
+      setSearchQuery(query);
+      executeSearch(query);
+    }
+  }, [searchParams]);
+
+  const executeSearch = (query: string) => {
+    if (!query.trim()) {
       setSearchResults(null);
       return;
     }
 
-    const query = searchQuery.toLowerCase();
+    const queryLower = query.toLowerCase();
     const results = tools.filter(
       tool => 
-        tool.name.toLowerCase().includes(query) || 
-        tool.description.toLowerCase().includes(query) || 
-        tool.tags?.some(tag => tag.toLowerCase().includes(query))
+        tool.name.toLowerCase().includes(queryLower) || 
+        tool.description.toLowerCase().includes(queryLower) || 
+        tool.tags?.some(tag => tag.toLowerCase().includes(queryLower))
     );
     
     setSearchResults(results);
     // Scroll to results area
     document.getElementById('search-results')?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const handleSearch = (e: React.FormEvent) => {
+    e.preventDefault();
+    executeSearch(searchQuery);
   };
 
   return (
